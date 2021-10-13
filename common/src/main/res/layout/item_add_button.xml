@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nested_background_selector">
+
+    <LinearLayout
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selectable_with_radius100"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/addEntityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <TextView
+            android:id="@+id/addEntityText"
+            style="@style/BaseTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:textColor="@color/secondary_normal"
+            tools:text="Добавить тип отходов" />
+    </LinearLayout>
+
+</FrameLayout>

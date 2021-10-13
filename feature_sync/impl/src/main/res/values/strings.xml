@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_sync_name">Синхронизация</string>
+
+    <string name="notification_sync_title">Синхронизация…</string>
+
+    <string name="sync_title_in_progress">Синхронизация данных</string>
+    <string name="sync_title_error">Ошибка синхронизации</string>
+    <string name="sync_body_in_progress">Подождите, приложение обновляет\nданные для работы…</string>
+    <string name="sync_retry">Повторить</string>
+    <string name="sync_skip">Продолжить работу</string>
+</resources>

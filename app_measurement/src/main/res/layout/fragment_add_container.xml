@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar" />
+
+        <ScrollView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/newContainerButton"
+                    style="@style/RadioButtonOverlay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_side_padding"
+                    android:layout_marginTop="@dimen/default_double_padding"
+                    android:layout_marginEnd="@dimen/default_side_padding"
+                    android:text="@string/measurement_new_container_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/containerTypeTitle"
+                    style="@style/BaseTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/default_side_padding"
+                    android:layout_marginTop="@dimen/default_padding"
+                    android:text="@string/measurement_container_type_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/newContainerButton" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/containerTypesWrapper"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/large_control_height"
+                    android:layout_marginHorizontal="@dimen/default_side_padding"
+                    android:layout_marginTop="@dimen/default_padding"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/containerTypeTitle">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/containerTypesDropdown"
+                        style="@style/BaseTextAppearance.AppTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/add_container_choose_container_type"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/containerTypeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:constraint_referenced_ids="containerTypeTitle,containerTypesWrapper" />
+
+                <TextView
+                    android:id="@+id/selectMnoContainerHint"
+                    style="@style/BaseTextAppearance.ParagraphSmallBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/default_side_padding"
+                    android:layout_marginTop="@dimen/default_triple_padding"
+                    android:text="@string/measurement_select_from_registry_hint"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/containerTypesWrapper" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mnoContainerList"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/selectMnoContainerHint"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_container_name" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/navigateToEditContainer"
+                    style="@style/AppTextButton"
+                    marginBottomSystemWindowInsets="@{true}"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/large_control_height"
+                    android:layout_marginHorizontal="@dimen/default_side_padding"
+                    android:layout_marginVertical="@dimen/default_double_padding"
+                    android:layout_weight="1"
+                    android:text="@string/measurement_forward"
+                    app:backgroundTint="@color/button_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mnoContainerList"
+                    app:layout_constraintVertical_bias="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/dataLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <include
+            android:id="@+id/viewError"
+            layout="@layout/view_list_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

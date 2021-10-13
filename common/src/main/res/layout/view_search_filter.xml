@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchWrapper"
+        style="@style/BaseTextInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/control_height"
+        android:layout_margin="6dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/filterImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/searchInput"
+            style="@style/BaseTextAppearance.AppTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_outlined_input"
+            android:textSize="@dimen/medium_text_size"
+            tools:hint="poisk" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/filterImageView"
+        android:layout_width="@dimen/control_height"
+        android:layout_height="@dimen/control_height"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_outlined_with_radius4_filled_with_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_filter"
+        app:tint="?colorAccent" />
+
+    <View
+        android:id="@+id/filterSetIndicator"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/bg_rectangle_with_radius100"
+        android:backgroundTint="@color/danger_normal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

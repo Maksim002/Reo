@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/media"
+        style="@style/ListItemImage"
+        android:layout_width="@dimen/image_side_size"
+        android:layout_height="@dimen/image_side_size"
+        android:layout_marginTop="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <ProgressBar
+        android:id="@+id/imageLoading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/removeMedia"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|end"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_ripple_round"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_cancel_circle" />
+</FrameLayout>

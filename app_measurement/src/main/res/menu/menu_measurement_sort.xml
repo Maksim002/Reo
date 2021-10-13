@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/measurement_sort_status"
+        android:title="@string/measurement_sort_status" />
+    <item
+        android:id="@+id/measurement_sort_created_at"
+        android:title="@string/measurement_sort_created_at" />
+</menu>

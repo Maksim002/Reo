@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+    android:layout_marginVertical="@dimen/default_padding"
+    android:background="@drawable/bg_outlined_with_radius4_filled_with_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/default_double_padding">
+
+    <TextView
+        android:id="@+id/source"
+        style="@style/BaseTextAppearance.Paragraph"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:textColor="@color/neutral_800"
+        app:layout_constraintEnd_toStartOf="@+id/measureCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ООО «Василек»" />
+
+    <TextView
+        android:id="@+id/measureCount"
+        style="@style/BaseTextAppearance.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/source"
+        tools:text="4 замера" />
+
+    <TextView
+        android:id="@+id/category"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/boulder"
+        app:layout_constraintEnd_toEndOf="@+id/measureCount"
+        app:layout_constraintStart_toStartOf="@+id/source"
+        app:layout_constraintTop_toBottomOf="@+id/source"
+        tools:text="Административное здание" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/neutral_800"
+        app:layout_constraintEnd_toEndOf="@+id/category"
+        app:layout_constraintStart_toStartOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/category"
+        tools:text="Академический район, Москва, Дер. зюзино, микрорайон №5, ул. Первомайская 42-24, 105203" />
+
+    <TextView
+        android:id="@+id/containersTitle"
+        style="@style/BaseTextAppearance.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/mno_item_containers_title"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        tools:visibility="visible" />
+
+    <ru.ktsstudio.common.ui.view.UntouchableRecyclerView
+        android:id="@+id/containers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="@+id/containersTitle"
+        app:layout_constraintStart_toStartOf="@+id/containersTitle"
+        app:layout_constraintTop_toBottomOf="@+id/containersTitle"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

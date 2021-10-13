@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginEnd="@dimen/default_padding">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/ListItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+</com.facebook.shimmer.ShimmerFrameLayout>

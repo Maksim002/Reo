@@ -1,0 +1,256 @@
+image: registry.team.ktsstudio.ru:443/kts-android/android-ci:kotlin-1.3.61
+
+stages:
+  - prepare
+  - check
+  - build
+  - delivery
+  - notify
+
+.common_template: &common_definition
+  before_script:
+    - export GRADLE_USER_HOME=$(pwd)/.gradle
+    - export VERSION=$(git rev-list --count HEAD)
+    - echo $VERSION
+    - chmod +x ./gradlew || true
+
+.build_template: &build_definition
+  <<: *common_definition
+  stage: build
+  tags:
+    - ci2
+    - docker
+  cache:
+    key: ${CI_PROJECT_ID}
+    paths:
+      - .gradle/
+      - .android/
+    untracked: true
+
+.delivery_template: &delivery_definition
+  <<: *common_definition
+  stage: delivery
+  tags:
+    - ci2
+    - docker
+  cache:
+    key: ${CI_PROJECT_ID}
+    paths:
+      - .gradle/
+
+.github_sync: &sync_definition
+  stage: prepare
+  when: manual
+  script:
+    - git config --global user.email "m.myalkin@ktsstudio.ru"
+    - git config --global user.name "Maxim Myalkin"
+    - cd ..
+    - rm -rf $FOLDER_NAME
+    - git clone $REPOSITORY $FOLDER_NAME
+    - cd $FOLDER_NAME
+    - git checkout $BRANCH 2>/dev/null || git checkout -b $BRANCH
+    - cd ..
+    - cp -arf reo-android $FOLDER_NAME/mobile
+    - rm -rf $FOLDER_NAME/mobile/.git
+    - cd $FOLDER_NAME
+    - git add -A
+    - git commit -m "Update mobile client"
+    - git push origin $BRANCH
+
+.notify_template: &notify_definition
+  <<: *common_definition
+  stage: notify
+  tags:
+    - ci2
+    - docker
+  only:
+    - /^tko-.*$/
+    - dev
+
+sync_measurements:
+  <<: *sync_definition
+  before_script:
+    - export FOLDER_NAME=morphology
+    - export BRANCH=main
+    - export REPOSITORY=git@github.com:PPKReo/morphology.git
+
+sync_verification:
+  <<: *sync_definition
+  before_script:
+    - export FOLDER_NAME=VerifyOO
+    - export BRANCH=main
+    - export REPOSITORY=git@github.com:PPKReo/VerifyOO.git
+
+gitlabbot-start:
+  <<: *notify_definition
+  stage: prepare
+  only:
+    - /^tko-.*$/
+    - dev
+  script:
+    - gitlab-bot --version="⏱ started on $CI_COMMIT_REF_NAME | Version - $VERSION"
+
+update-sdk:
+  <<: *build_definition
+  stage: prepare
+  when: manual
+  script:
+    - yes | sdkmanager --update || true
+
+clean:
+  <<: *build_definition
+  stage: prepare
+  when: manual
+  script:
+    - ./gradlew clean
+
+detekt:
+  <<: *build_definition
+  needs: []
+  stage: check
+  script:
+    - ./gradlew detekt
+
+lint:
+  <<: *build_definition
+  needs: []
+  stage: check
+  script:
+    - ./gradlew lintDebug
+
+apk-measurement-dev:
+  <<: *build_definition
+  artifacts:
+    paths:
+      - app_measurement/build/outputs/apk/debug/app_measurement-debug.apk
+  only:
+    - /^tko-.*$/
+    - dev
+  script:
+    - ./gradlew :app_measurement:assembleDebug
+
+apk-measurement-release:
+  <<: *build_definition
+  only:
+    - dev
+  artifacts:
+    paths:
+      - app_measurement/build/outputs/apk/release/app_measurement-release.apk
+      - app_measurement/build/outputs/mapping/release/mapping.txt
+  script:
+    - ./gradlew :app_measurement:assembleRelease
+
+apk-verification-dev:
+  <<: *build_definition
+  artifacts:
+    paths:
+      - app_verification/build/outputs/apk/debug/app_verification-debug.apk
+  only:
+    - /^tko-.*$/
+    - dev
+  script:
+    - ./gradlew :app_verification:assembleDebug
+
+apk-verification-release:
+  <<: *build_definition
+  only:
+    - dev
+  artifacts:
+    paths:
+      - app_verification/build/outputs/apk/release/app_verification-release.apk
+      - app_verification/build/outputs/mapping/release/mapping.txt
+  script:
+    - ./gradlew :app_verification:assembleRelease
+
+appcenter-measurement-release:
+  <<: *delivery_definition
+  needs: ["apk-measurement-release"]
+  only:
+    - dev
+  script:
+    - ./gradlew :app_measurement:appCenterUploadRelease | tee appcenter-release-raw.txt
+  artifacts:
+    paths:
+      - app_measurement/build/outputs/appcenter-release.txt
+  after_script:
+    - cat appcenter-release-raw.txt | grep "^AppCenter release url is" | tee appcenter-release.txt
+    - mkdir -p app_measurement/build/outputs
+    - mv appcenter-release.txt app_measurement/build/outputs 2> /dev/null || true
+
+appcenter-measurement-dev:
+  <<: *delivery_definition
+  needs: ["apk-measurement-dev"]
+  only:
+    - dev
+  script:
+    - ./gradlew :app_measurement:appCenterUploadDebug | tee appcenter-dev-raw.txt
+  artifacts:
+    paths:
+      - app_measurement/build/outputs/appcenter-dev.txt
+  after_script:
+    - cat appcenter-dev-raw.txt | grep "^AppCenter release url is" | tee appcenter-dev.txt
+    - mkdir -p app_measurement/build/outputs
+    - mv appcenter-dev.txt app_measurement/build/outputs 2> /dev/null || true
+
+appcenter-verification-release:
+  <<: *delivery_definition
+  needs: ["apk-verification-release"]
+  only:
+    - dev
+  script:
+    - ./gradlew :app_verification:appCenterUploadRelease | tee appcenter-release-raw.txt
+  artifacts:
+    paths:
+      - app_verification/build/outputs/appcenter-release.txt
+  after_script:
+    - cat appcenter-release-raw.txt | grep "^AppCenter release url is" | tee appcenter-release.txt
+    - mkdir -p app_verification/build/outputs
+    - mv appcenter-release.txt app_verification/build/outputs 2> /dev/null || true
+
+appcenter-verification-dev:
+  <<: *delivery_definition
+  needs: ["apk-verification-dev"]
+  only:
+    - dev
+  script:
+    - ./gradlew :app_verification:appCenterUploadDebug | tee appcenter-dev-raw.txt
+  artifacts:
+    paths:
+      - app_verification/build/outputs/appcenter-dev.txt
+  after_script:
+    - cat appcenter-dev-raw.txt | grep "^AppCenter release url is" | tee appcenter-dev.txt
+    - mkdir -p app_verification/build/outputs
+    - mv appcenter-dev.txt app_verification/build/outputs 2> /dev/null || true
+
+gitlabbot-dev:
+  <<: *notify_definition
+  needs: ["appcenter-verification-dev", "appcenter-measurement-dev"]
+  only:
+    - dev
+  script:
+    - APPCENTER_BUILD_MEASUREMENT=$(cat app_measurement/build/outputs/appcenter-dev.txt  2>/dev/null || true)
+    - APPCENTER_BUILD_VERIFICATION=$(cat app_verification/build/outputs/appcenter-dev.txt  2>/dev/null || true)
+    - gitlab-bot --version="✅ dev on $CI_COMMIT_REF_NAME | Version - $VERSION | 📏 $APPCENTER_BUILD_MEASUREMENT | 📝 $APPCENTER_BUILD_VERIFICATION"
+
+gitlabbot-feature:
+  <<: *notify_definition
+  only:
+    - /^tko-.*$/
+  script:
+    - gitlab-bot --version="✅ feature on $CI_COMMIT_REF_NAME | Version - $VERSION"
+
+gitlabbot-release:
+  <<: *notify_definition
+  needs: ["appcenter-verification-release", "appcenter-measurement-release"]
+  only:
+    - dev
+  script:
+    - APPCENTER_BUILD_MEASUREMENT=$(cat app_measurement/build/outputs/appcenter-release.txt  2>/dev/null || true)
+    - APPCENTER_BUILD_VERIFICATION=$(cat app_verification/build/outputs/appcenter-release.txt  2>/dev/null || true)
+    - gitlab-bot --version="✅ release on $CI_COMMIT_REF_NAME | Version - $VERSION | 📏 $APPCENTER_BUILD_MEASUREMENT | 📝 $APPCENTER_BUILD_VERIFICATION"
+
+gitlabbot-error:
+  <<: *notify_definition
+  when: on_failure
+  script:
+    - gitlab-bot --version="❌ failed on $CI_COMMIT_REF_NAME | Version - $VERSION"

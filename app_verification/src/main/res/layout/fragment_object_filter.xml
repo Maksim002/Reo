@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/statusTitle"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_triple_padding"
+            android:text="@string/filter_status_title"
+            android:textColor="@color/neutral_800"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/statusInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/large_control_height"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_cell_size"
+            android:visibility="gone"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statusTitle">
+
+            <AutoCompleteTextView
+                android:id="@+id/statusDropdown"
+                style="@style/BaseTextAppearance.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/filter_status_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wasteManagementTypeTitle"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_triple_padding"
+            android:text="@string/filter_category_title"
+            android:textColor="@color/neutral_800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statusInput" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wasteManagementTypeInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/large_control_height"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_cell_size"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wasteManagementTypeTitle">
+
+            <AutoCompleteTextView
+                android:id="@+id/wasteManagementTypeDropdown"
+                style="@style/BaseTextAppearance.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/filter_category_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/regionTitle"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_triple_padding"
+            android:text="@string/filter_region_title"
+            android:textColor="@color/neutral_800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wasteManagementTypeInput" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/regionInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/large_control_height"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_cell_size"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regionTitle">
+
+            <AutoCompleteTextView
+                android:id="@+id/regionDropdown"
+                style="@style/BaseTextAppearance.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/filter_region_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/surveyStatusTitle"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_triple_padding"
+            android:text="@string/filter_survey_status_title"
+            android:textColor="@color/neutral_800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regionInput" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/large_control_height"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginTop="@dimen/default_cell_size"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/surveyStatusTitle">
+
+            <AutoCompleteTextView
+                android:id="@+id/surveyStatusDropdown"
+                style="@style/BaseTextAppearance.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/filter_survey_status_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <FrameLayout
+            android:id="@+id/bottomBlock"
+            paddingBottomSystemWindowInsets="@{true}"
+            paddingLeftSystemWindowInsets="@{true}"
+            paddingRightSystemWindowInsets="@{true}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?colorSurface"
+            android:clipToPadding="false"
+            android:elevation="@dimen/default_padding"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingVertical="@dimen/default_double_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/applyButton"
+                style="@style/AppTextButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_control_height"
+                android:text="@string/filter_apply"
+                app:backgroundTint="?colorPrimary" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

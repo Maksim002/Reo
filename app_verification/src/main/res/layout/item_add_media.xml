@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/image_side_size"
+    android:layout_height="@dimen/image_side_size"
+    android:layout_marginTop="@dimen/default_padding"
+    android:layout_marginEnd="@dimen/default_padding"
+    android:background="@drawable/bg_selectable_dashed_stroke"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/plus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_plus"
+        android:tint="@color/subtitle_color"
+        app:layout_constraintBottom_toTopOf="@id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/upload"
+        style="@style/BaseTextAppearance"
+        android:textSize="@dimen/regular_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/survey_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

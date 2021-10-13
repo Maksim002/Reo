@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nested_background_selector"
+    android:paddingHorizontal="@dimen/default_side_padding"
+    android:paddingVertical="@dimen/default_cell_size">
+
+    <TextView
+        android:id="@+id/dayTitle"
+        style="@style/BaseTextAppearance.ParagraphSmallBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Понедельник" />
+
+    <TextView
+        android:id="@+id/workTime"
+        style="@style/BaseTextAppearance.Paragraph.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/survey_schedule_work_mode_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dayTitle" />
+
+    <TextView
+        android:id="@+id/workStart"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:background="@drawable/bg_outlined_selector_with_radius4_with_ripple"
+        android:clickable="true"
+        android:drawablePadding="@dimen/default_triple_padding"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/default_padding"
+        android:paddingVertical="@dimen/default_double_padding"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_time"
+        app:layout_constraintEnd_toStartOf="@id/workEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/workTime"
+        tools:text="18:00" />
+
+    <TextView
+        android:id="@+id/workEnd"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding"
+        android:background="@drawable/bg_outlined_selector_with_radius4_with_ripple"
+        android:drawablePadding="@dimen/default_triple_padding"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/default_padding"
+        android:paddingVertical="@dimen/default_double_padding"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/workStart"
+        app:layout_constraintTop_toBottomOf="@id/workTime"
+        tools:text="18:00" />
+
+    <TextView
+        android:id="@+id/breakTime"
+        style="@style/BaseTextAppearance.Paragraph.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/survey_schedule_break_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/workStart" />
+
+    <TextView
+        android:id="@+id/breakStart"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:background="@drawable/bg_outlined_selector_with_radius4_with_ripple"
+        android:clickable="true"
+        android:drawablePadding="@dimen/default_triple_padding"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/default_padding"
+        android:paddingVertical="@dimen/default_double_padding"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_time"
+        app:layout_constraintEnd_toStartOf="@id/breakEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/breakTime"
+        tools:text="18:00" />
+
+    <TextView
+        android:id="@+id/breakEnd"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding"
+        android:background="@drawable/bg_outlined_selector_with_radius4_with_ripple"
+        android:drawablePadding="@dimen/default_triple_padding"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/default_padding"
+        android:paddingVertical="@dimen/default_double_padding"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/breakStart"
+        app:layout_constraintTop_toBottomOf="@id/breakTime"
+        tools:text="18:00" />
+
+    <TextView
+        android:id="@+id/breakDescription"
+        style="@style/BaseTextAppearance.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/default_padding"
+        android:paddingBottom="@dimen/default_double_padding"
+        android:text="@string/survey_schedule_break_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/breakStart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

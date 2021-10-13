@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingHorizontal="@dimen/default_side_padding"
+    android:paddingTop="@dimen/default_padding">
+
+    <RadioButton
+        android:id="@+id/checkbox"
+        style="@style/RadioButtonOverlay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/containerName"
+        style="@style/BaseTextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toTopOf="@id/checkbox"
+        tools:text="Контейнер" />
+
+    <TextView
+        android:id="@+id/containerType"
+        style="@style/BaseTextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/neutral_300"
+        app:layout_constraintStart_toStartOf="@id/containerName"
+        app:layout_constraintTop_toBottomOf="@id/containerName"
+        tools:text="Контейнер для раздельного сбора" />
+</androidx.constraintlayout.widget.ConstraintLayout>

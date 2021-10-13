@@ -1,0 +1,15 @@
+ext.isCiServer = System.getenv().containsKey("IS_CI")
+
+buildCache {
+    local {
+        enabled = !isCiServer
+    }
+    remote(HttpBuildCache) {
+        url = "${nexus_cache_url}"
+        push = isCiServer
+        credentials {
+            username = "${nexus_user}"
+            password = "${nexus_password}"
+        }
+    }
+}

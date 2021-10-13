@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                paddingLeftSystemWindowInsets="@{true}"
+                paddingRightSystemWindowInsets="@{true}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/supportTitle"
+                    style="@style/BaseTextAppearance.Headline4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_horizontal_margin"
+                    android:layout_marginTop="@dimen/default_triple_padding"
+                    android:layout_marginEnd="@dimen/default_horizontal_margin"
+                    android:text="@string/settings_support_title"
+                    android:textColor="@color/neutral_800"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/supportSubtitle"
+                    style="@style/BaseTextAppearance.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/settings_support_subtitle"
+                    android:textColor="@color/boulder"
+                    app:layout_constraintEnd_toEndOf="@+id/supportTitle"
+                    app:layout_constraintStart_toStartOf="@+id/supportTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/supportTitle" />
+
+                <ImageView
+                    android:id="@+id/supportEmailIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_mail"
+                    app:layout_constraintStart_toStartOf="@+id/supportSubtitle"
+                    app:layout_constraintTop_toBottomOf="@+id/supportSubtitle" />
+
+                <TextView
+                    android:id="@+id/supportEmailLabel"
+                    style="@style/BaseTextAppearance.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_padding"
+                    android:text="@string/settings_support_email_label"
+                    app:layout_constraintBottom_toBottomOf="@+id/supportEmailIcon"
+                    app:layout_constraintEnd_toEndOf="@+id/supportSubtitle"
+                    app:layout_constraintStart_toEndOf="@+id/supportEmailIcon"
+                    app:layout_constraintTop_toTopOf="@+id/supportEmailIcon" />
+
+                <TextView
+                    android:id="@+id/supportEmailValue"
+                    style="@style/BaseTextAppearance.Content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="@dimen/default_padding"
+                    android:textColor="@color/boulder"
+                    app:layout_constraintEnd_toEndOf="@+id/supportEmailLabel"
+                    app:layout_constraintStart_toStartOf="@+id/supportEmailLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/supportEmailLabel"
+                    tools:text="support@mail.com" />
+
+                <View
+                    android:id="@+id/supportEmailView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_rectangle_with_radius4_ripple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/supportEmailValue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/supportSubtitle" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/supportEmailGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="supportEmailIcon,supportEmailLabel,supportEmailValue,supportEmailView" />
+
+                <ImageView
+                    android:id="@+id/supportCallIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_call"
+                    app:layout_constraintStart_toStartOf="@+id/supportSubtitle"
+                    app:layout_constraintTop_toBottomOf="@+id/supportEmailView" />
+
+                <TextView
+                    android:id="@+id/supportCallLabel"
+                    style="@style/BaseTextAppearance.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_padding"
+                    android:text="@string/settings_support_call_label"
+                    app:layout_constraintBottom_toBottomOf="@+id/supportCallIcon"
+                    app:layout_constraintEnd_toEndOf="@+id/supportSubtitle"
+                    app:layout_constraintStart_toEndOf="@+id/supportCallIcon"
+                    app:layout_constraintTop_toTopOf="@+id/supportCallIcon" />
+
+                <TextView
+                    android:id="@+id/supportCallValue"
+                    style="@style/BaseTextAppearance.Content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="@dimen/default_padding"
+                    android:textColor="@color/boulder"
+                    app:layout_constraintEnd_toEndOf="@+id/supportCallLabel"
+                    app:layout_constraintStart_toStartOf="@+id/supportCallLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/supportCallLabel"
+                    tools:text="+7 983 764 56 64" />
+
+                <View
+                    android:id="@+id/supportPhoneView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_rectangle_with_radius4_ripple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/supportCallValue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/supportEmailView" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/supportCallGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="supportCallIcon,supportCallLabel,supportCallValue,supportPhoneView" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/logoutButton"
+                    style="@style/AppTextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/default_triple_padding"
+                    android:layout_marginTop="@dimen/default_double_padding"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/settings_exit"
+                    app:backgroundTint="@color/danger_normal"
+                    app:icon="@drawable/ic_exit"
+                    app:iconGravity="textStart"
+                    app:iconPadding="@dimen/default_padding"
+                    app:iconTint="?colorOnPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/supportPhoneView"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ProgressBar
+                    android:id="@+id/settingsLoading"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+                <include
+                    android:id="@+id/settingsErrorView"
+                    layout="@layout/view_list_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/supportGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="supportTitle,supportSubtitle,supportEmailGroup,supportCallGroup" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

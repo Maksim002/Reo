@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_outlined_selectable_with_radius4"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="@dimen/default_double_padding">
+
+        <ImageView
+            android:id="@+id/progressIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/progressTitle"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="@dimen/default_padding"
+            android:textColor="@color/neutral_800"
+            app:layout_constraintEnd_toStartOf="@id/proceedIcon"
+            app:layout_constraintStart_toEndOf="@+id/progressIcon"
+            app:layout_constraintTop_toTopOf="@+id/progressIcon"
+            tools:text="Общая информация\nОбщая информация" />
+
+        <TextView
+            android:id="@+id/progress"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="@+id/progressTitle"
+            app:layout_constraintTop_toBottomOf="@+id/progressTitle"
+            tools:text="0/7" />
+
+        <ImageView
+            android:id="@+id/proceedIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBottom_toBottomOf="@+id/progressTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/progressTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

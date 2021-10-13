@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/tabHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            style="@style/BottomBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="@dimen/default_padding"
+            app:itemTextAppearanceActive="@style/BaseTextAppearance.Label"
+            app:itemTextAppearanceInactive="@style/BaseTextAppearance.Label"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/tabs_bottom_menu"
+            app:paddingBottomSystemWindowInsets="@{true}"
+            app:paddingLeftSystemWindowInsets="@{true}"
+            app:paddingRightSystemWindowInsets="@{true}" />
+
+    </LinearLayout>
+</layout>

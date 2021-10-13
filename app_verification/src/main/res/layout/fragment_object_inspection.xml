@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/progressList"
+            paddingLeftSystemWindowInsets="@{true}"
+            paddingRightSystemWindowInsets="@{true}"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingTop="@dimen/default_triple_padding"
+            android:paddingBottom="@dimen/default_triple_padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/bottomBlock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <FrameLayout
+            android:id="@+id/bottomBlock"
+            paddingBottomSystemWindowInsets="@{true}"
+            paddingLeftSystemWindowInsets="@{true}"
+            paddingRightSystemWindowInsets="@{true}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?colorSurface"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingVertical="@dimen/default_double_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sendInspectionButton"
+                style="@style/AppTextButton"
+                app:backgroundTint="@color/button_selector"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="@dimen/large_control_height"
+                android:text="@string/object_inspection_send" />
+
+            <ProgressBar
+                android:id="@+id/surveySendingProgress"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="@dimen/default_padding"
+                android:theme="@style/TintedProgress"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,1020 @@
+[
+  {
+    "acceptanceDocumentation": {
+      "conclusion": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "dangerType": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "environmentControlProgram": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "environmentControlProgramDate": "2020-12-19T14:58:59.601Z",
+      "environmentalImpactResearchResults": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "finModel": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "finModelCompletedDate": "2020-12-19T14:58:59.601Z",
+      "financialJustification": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "governmentConclusion": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "governmentConclusionDate": "2020-12-19T14:58:59.601Z",
+      "governmentEnvironmentalConclusion": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "governmentEnvironmentalExpertisesDate": "2020-12-19T14:58:59.601Z",
+      "groro": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "groroRequestRequisites": "string",
+      "hasConclusion": true,
+      "hasEnvironmentControlProgram": true,
+      "hasEnvironmentalImpactResearch": true,
+      "hasFinModel": true,
+      "hasFinancialJustification": true,
+      "hasGovernmentConclusion": true,
+      "hasGovernmentEnvironmentalConclusion": true,
+      "hasIntegratedEnvironmentalPermission": true,
+      "hasInvestmentProgram": true,
+      "hasLicence": true,
+      "hasProjectDocumentation": true,
+      "hasProjectOrganization": true,
+      "hasSanPinConclusion": true,
+      "hasSpecialInvestigations": true,
+      "hasStateRegistration": true,
+      "hasTechnicalSpecification": true,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "includeInGroroDate": "2020-12-19T14:58:59.601Z",
+      "integratedEnvironmentalPermission": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "integratedEnvironmentalPermissionDate": "2020-12-19T14:58:59.601Z",
+      "investmentProgram": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "investmentProgramDate": "2020-12-19T14:58:59.601Z",
+      "isInRegistry": true,
+      "isInTerritorialScheme": true,
+      "isOnBorder": true,
+      "justificationCompletedDate": "2020-12-19T14:58:59.601Z",
+      "licenceAuthor": "string",
+      "licenceNumber": "string",
+      "licenceStartDate": "2020-12-19T14:58:59.601Z",
+      "licenceWillBeGivenDate": "2020-12-19T14:58:59.601Z",
+      "noConclusionReason": "string",
+      "noEnvironmentControlProgramReason": "string",
+      "noFinModelReason": "string",
+      "noGovernmentConclusionReason": "string",
+      "noGovernmentEnvironmentalConclusionReason": "string",
+      "noGroroReason": "string",
+      "noIntegratedEnvironmentalPermissionReason": "string",
+      "noInvestmentProgramReason": "string",
+      "noJustificationReason": "string",
+      "noLicenceReason": "string",
+      "noProjectDocumentationReason": "string",
+      "noPublicHearingsReason": "string",
+      "noResearchReason": "string",
+      "noSanPinConclusionReason": "string",
+      "noTechnicalSpecificationReason": "string",
+      "objectCategory": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "projectDocumentation": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "projectDocumentationCompletedDate": "2020-12-19T14:58:59.601Z",
+      "projectOrganizationInn": "string",
+      "projectOrganizationName": "string",
+      "publicHearingsCompleted": true,
+      "publicHearingsResults": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "researchCompletedDate": "2020-12-19T14:58:59.601Z",
+      "samplesResults": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "sanPinConclusion": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "sanPinConclusionDate": "2020-12-19T14:58:59.601Z",
+      "specialInvestigationsDate": "2020-12-19T14:58:59.601Z",
+      "specialInvestigator": "string",
+      "stateRegistration": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "stateRegistrationDate": "2020-12-19T14:58:59.601Z",
+      "stateRegistrationNumber": "string",
+      "technicalSpecification": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "technicalSpecificationCompletedDate": "2020-12-19T14:58:59.601Z",
+      "territorialSchemeDocumentRequisites": "string",
+      "territorialSchemeLink": "string"
+    },
+    "addressDescription": "string",
+    "borderLandPlots": [
+      {
+        "address": "string",
+        "allowedUsingType": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "area": 0,
+        "automobileAccessRoadsConnectionDate": "2020-12-19T14:58:59.601Z",
+        "automobileRoadType": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "buildingCadastralNumber": "string",
+        "cadastralNumber": "string",
+        "compliancePeriod": "2020-12-19T14:58:59.601Z",
+        "dedicatedElecricalPower": 0,
+        "distanceToNearestAdministrativeCenter": 0,
+        "distanceToNearestAirport": 0,
+        "distanceToNearestRailway": 0,
+        "distanceToNearestSettlement": 0,
+        "distanceToNearestTransshipment": 0,
+        "egrp": {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        },
+        "gasSupplyConnectionDate": "2020-12-19T14:58:59.601Z",
+        "gasSupplyPower": 0,
+        "hasAutomobileAccessRoads": true,
+        "hasGasSupply": true,
+        "hasHeatPipelinesConnection": true,
+        "hasLandPlotForProjectRealization": true,
+        "hasPowerSupply": true,
+        "hasRailway": true,
+        "hasSanityProtectionZone": true,
+        "hasUrbanDevelopmentPlan": true,
+        "hasWaterSupply": true,
+        "heatPipelinesConnectionStartDate": "2020-12-19T14:58:59.601Z",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "landCategory": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "landPotArea": 0,
+        "nearestAdministrativeCenterName": "string",
+        "nearestSettlementName": "string",
+        "ownershipType": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "powerSupplyConnectionDate": "2020-12-19T14:58:59.601Z",
+        "rightsGivingDocumentName": "string",
+        "rightsGivingDocumentStartDate": "2020-12-19T14:58:59.601Z",
+        "rigthsGivingDocumentNumber": "string",
+        "sanitaryProtectionZoneSize": 0,
+        "suitableForExonomicActivitiesLandPloArea": 0,
+        "waterSupplyPower": 0,
+        "watterSupplyConnectionDate": "2020-12-19T14:58:59.601Z"
+      }
+    ],
+    "category": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "competitiveAdvantages": "string",
+    "constructionStartDate": "2020-12-19T14:58:59.601Z",
+    "cost": {
+      "equipment": 0,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "installation": 0,
+      "russianEquipment": 0,
+      "russianInstallation": 0,
+      "total": 0
+    },
+    "currentAndPlannedSimilarObjects": "string",
+    "currentLandPlots": [
+      {
+        "averageInnacuracy": 0,
+        "cadastralNumber": "string",
+        "coordinatesSystem": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "description": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "points": [
+          {
+            "description": {
+              "id": 0,
+              "type": {
+                "displayName": "string",
+                "name": "string"
+              },
+              "value": "string"
+            },
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "number": "string",
+            "x": "string",
+            "y": "string"
+          }
+        ],
+        "scheme": {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        },
+        "zoneNumber": "string"
+      }
+    ],
+    "dataSource": {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "name": "string",
+      "representativeFio": "string",
+      "representativePosition": "string",
+      "subjectName": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "uploadDate": "2020-12-19T14:58:59.601Z"
+    },
+    "equipment": [
+      {
+        "brand": "string",
+        "count": 0,
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "length": 0,
+        "loadingMechanism": "string",
+        "manufacturer": "string",
+        "name": "string",
+        "otherType": "string",
+        "passport": {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        },
+        "photos": [
+          {
+            "created": "2020-12-19T14:58:59.601Z",
+            "fileDownloadUri": "string",
+            "fileName": "string",
+            "fileType": "string",
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "latitude": "string",
+            "longitude": "string",
+            "size": 0
+          }
+        ],
+        "sortingPostsCount": 0,
+        "speed": 0,
+        "type": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "wasteWidth": 0,
+        "width": 0
+      }
+    ],
+    "exploitationEndDate": "2020-12-19T14:58:59.601Z",
+    "exploitationPeriod": 0,
+    "exploitationStartActNumber": "string",
+    "exploitationStartDate": "2020-12-19T14:58:59.601Z",
+    "federalDistrictName": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "fiasAddress": {
+      "area": "string",
+      "buildingNumber": "string",
+      "cadastralNumber": "string",
+      "city": "string",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "innerCityTerritory": "string",
+      "landPlotNumber": "string",
+      "municipalRegionName": "string",
+      "oktmo": "string",
+      "planningStructureElement": "string",
+      "postalCode": "string",
+      "regionName": "string",
+      "roomNumber": "string",
+      "streetRoadElement": "string"
+    },
+    "fieldsToChange": [
+      "string"
+    ],
+    "hasSimilarObjectsInSubject": true,
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "indicator": {
+      "area": 0,
+      "compostPurpose": "string",
+      "compostingMaterialName": "string",
+      "compostingZoneCapacityPerYear": 0,
+      "equipmentType": "string",
+      "freeCapacity": 0,
+      "fullPojectCapacity": 0,
+      "generalScheme": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "hasCompostingZone": true,
+      "hasRdfZone": true,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "isImportSubstitutionNeeded": true,
+      "isNdtEquipmentUsed": true,
+      "ndtDictionaryName": "string",
+      "ndtEquipmentType": "string",
+      "nextYearFreeCapacity": 0,
+      "noCompostingZoneReason": "string",
+      "noRdfZoneReason": "string",
+      "photos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ],
+      "previousYearNonTkoWeight": 0,
+      "previousYearTkoWeight": 0,
+      "productionCapacity": 0,
+      "productionPartArea": 0,
+      "productionPartPhotos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ],
+      "productionZoneScheme": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "projectCapacity": 0,
+      "rdfPurpose": "string",
+      "rdfZoneCapacityPerYear": 0,
+      "secondaryRawMaterialsPerYear": 0,
+      "sortingZoneArea": 0,
+      "technologicalScheme": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "unloadingZoneArea": 0,
+      "utilizationPercent": 0
+    },
+    "infrastructureObjectInfo": {
+      "asuFunctions": "string",
+      "asuName": "string",
+      "environmentMonitoringSystemUsed": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "environmentMonitoringSystemsCount": 0,
+      "equipmentPhotos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ],
+      "fencesPhotos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ],
+      "fencesType": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "hasAsuSystem": true,
+      "hasEnvironmentMonitoringSystem": true,
+      "hasFences": true,
+      "hasLights": true,
+      "hasLocalTreatmentFacilities": true,
+      "hasManagementSystem": true,
+      "hasRadiationControl": true,
+      "hasRoads": true,
+      "hasSecurity": true,
+      "hasVideoEquipment": true,
+      "hasWeightControl": true,
+      "hasWheelsWashingPoint": true,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "lightsType": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "localTreatmentFacilitiesCount": 0,
+      "noAsuReason": "string",
+      "noEnvironmentMonitoringSystemReason": "string",
+      "noEquipmentReason": "string",
+      "noFencesReason": "string",
+      "noLightsReason": "string",
+      "noLocalTreatmentFacilitiesReason": "string",
+      "noRadiationControlReason": "string",
+      "noRoadsReason": "string",
+      "noSecurityReason": "string",
+      "noTreatmentFacilitiesReason": "string",
+      "noVideoEquipmentReason": "string",
+      "noWashingEquipmentReason": "string",
+      "noWeightControlReason": "string",
+      "noWheelsWashingPointReason": "string",
+      "radiationControlEquipmentBrand": "string",
+      "radiationControlEquipmentCount": 0,
+      "radiationControlEquipmentManufacturer": "string",
+      "radiationControlEquipmentPassport": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "radiationControlEquipmentPhotos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ],
+      "roadSurfaceType": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "roadsLength": 0,
+      "roadsScheme": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "securityEmployeeCount": 0,
+      "securitySource": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "treatmentFacilitiesCapacity": 0,
+      "treatmentFacilitiesPassport": {
+        "created": "2020-12-19T14:58:59.601Z",
+        "fileDownloadUri": "string",
+        "fileName": "string",
+        "fileType": "string",
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "latitude": "string",
+        "longitude": "string",
+        "size": 0
+      },
+      "treatmentFacilitiesPhotos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ],
+      "treatmentFacilitiesType": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "videoEquipmentCount": 0,
+      "weightControlEquipmentBrand": "string",
+      "weightControlEquipmentCount": 0,
+      "weightControlEquipmentManufacturer": "string",
+      "weightPlatformLength": 0,
+      "wheelsWashingEquipmentBrand": "string",
+      "wheelsWashingEquipmentCount": 0,
+      "wheelsWashingEquipmentManufacturer": "string",
+      "wheelsWashingEquipmentPhotos": [
+        {
+          "created": "2020-12-19T14:58:59.601Z",
+          "fileDownloadUri": "string",
+          "fileName": "string",
+          "fileType": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "size": 0
+        }
+      ]
+    },
+    "investment": {
+      "actualAddress": "string",
+      "agreementRequisites": "string",
+      "directorFio": "string",
+      "email": "string",
+      "experience": "string",
+      "fullInvestmentAmount": 0,
+      "hasAgreementOfIntent": true,
+      "hasInvestor": true,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "inn": "string",
+      "kpp": "string",
+      "legalAddress": "string",
+      "name": "string",
+      "ogrn": "string",
+      "ogrnip": "string",
+      "personalInvestmentAmount": 0,
+      "phone": "string",
+      "plannedPaybackPeriod": 0,
+      "representatioveFio": "string",
+      "representatiovePosition": "string",
+      "requiredGrossRevenue": 0,
+      "website": "string"
+    },
+    "isInFederalOrRegionalPrograms": true,
+    "latitude": "string",
+    "longitude": "string",
+    "name": "string",
+    "operator": {
+      "actualAddress": "string",
+      "directorFio": "string",
+      "email": "string",
+      "inn": "string",
+      "kpp": "string",
+      "legalAddress": "string",
+      "name": "string",
+      "ogrn": "string",
+      "ogrnip": "string",
+      "phone": "string",
+      "representativeOfOperatorFio": "string",
+      "representativeOfOperatorPosition": "string"
+    },
+    "ownerInn": "string",
+    "ownerName": "string",
+    "power": 0,
+    "programs": "string",
+    "risks": "string",
+    "roInfo": {
+      "endDate": "2020-12-19T14:58:59.601Z",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "inn": "string",
+      "municipalName": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "name": "string",
+      "oktmoNumber": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "pricingPerCoub": 0,
+      "pricingPerTonn": 0,
+      "roId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "startDate": "2020-12-19T14:58:59.601Z",
+      "zoneName": "string"
+    },
+    "secondaryResources": {
+      "blackMetals": 0,
+      "bmp": 0,
+      "cardboard": 0,
+      "glass": 0,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "multiPayerPackage": 0,
+      "nonferrousMetals": 0,
+      "notSpecifiedSecondaryResources": 0,
+      "percentage": 0,
+      "petf": 0,
+      "pnd": 0,
+      "pp": 0,
+      "ps": 0,
+      "pvd": 0,
+      "pvh": 0,
+      "textile": 0,
+      "wastepaper": 0
+    },
+    "similarObjectsCount": 0,
+    "status": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "subjectAreaName": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "subjectName": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "tariff": {
+      "averageYearWasteReceiving": 0,
+      "burial": 0,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "maxTariffPerMeter": 0,
+      "maxTariffPerTon": 0,
+      "operatorTariffEndDate": "2020-12-19T14:58:59.602Z",
+      "operatorTariffStartDate": "2020-12-19T14:58:59.602Z"
+    },
+    "technicalSurvey": {
+      "date": "2020-12-19T14:58:59.602Z",
+      "files": [
+        {
+          "creationDate": "2020-12-19T14:58:59.602Z",
+          "file": {
+            "created": "2020-12-19T14:58:59.602Z",
+            "fileDownloadUri": "string",
+            "fileName": "string",
+            "fileType": "string",
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "latitude": "string",
+            "longitude": "string",
+            "size": 0
+          },
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "latitude": "string",
+          "longitude": "string",
+          "signedAct": {
+            "created": "2020-12-19T14:58:59.602Z",
+            "fileDownloadUri": "string",
+            "fileName": "string",
+            "fileType": "string",
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "latitude": "string",
+            "longitude": "string",
+            "size": 0
+          }
+        }
+      ],
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "omsuName": "string",
+      "omsuRepresentativeName": "string",
+      "omsuRepresentativePosition": "string",
+      "operatorRepresentativeName": "string",
+      "operatorRepresentativePosition": "string",
+      "otherParticipantName": "string",
+      "otherParticipantRepresentativeName": "string",
+      "otherParticipantRepresentativePosition": "string",
+      "result": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      },
+      "roRepresentativeName": "string",
+      "roRepresentativePosition": "string",
+      "status": {
+        "id": 0,
+        "type": {
+          "displayName": "string",
+          "name": "string"
+        },
+        "value": "string"
+      }
+    },
+    "type": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "verificationStatusInfo": {
+      "cardCreated": true,
+      "comment": "string",
+      "fromPpk": true,
+      "fromTerritorialScheme": true,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "infoByOperator": true,
+      "verifiedByOperator": true
+    },
+    "verified": true,
+    "verifiedFields": [
+      "string"
+    ],
+    "wasteCategoryInfos": [
+      {
+        "count": 0,
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "wasteCategory": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        }
+      }
+    ],
+    "wasteManagementType": {
+      "id": 0,
+      "type": {
+        "displayName": "string",
+        "name": "string"
+      },
+      "value": "string"
+    },
+    "wasteTypes": [
+      {
+        "currentYearWasteWeight": 0,
+        "dangerType": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        },
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "previousYearWasteWeight": 0,
+        "wasteCount": 0,
+        "wasteDirection": "string",
+        "wastePrecentage": 0,
+        "wasteType": {
+          "id": 0,
+          "type": {
+            "displayName": "string",
+            "name": "string"
+          },
+          "value": "string"
+        }
+      }
+    ],
+    "workSchedule": {
+      "daysPerYearCount": 0,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "managersCount": 0,
+      "scheduleEnd": "string",
+      "scheduleStart": "string",
+      "shiftsPerDayCount": 0,
+      "workersCount": 0,
+      "workplacesCount": 0
+    }
+  }
+]

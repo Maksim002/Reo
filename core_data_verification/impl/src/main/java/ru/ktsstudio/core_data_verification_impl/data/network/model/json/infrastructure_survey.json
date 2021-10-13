@@ -1,0 +1,176 @@
+{
+  "hasWeightControl": true,
+  "weightControlEquipmentBrand": "Weight Control Company",
+  "weightControlEquipmentCount": 2,
+  "weightControlEquipmentManufacturer": "Weight Control Company",
+  "weightPlatformLength": 100,
+  "weightControlEquipmentPhotos": [],
+  "weightControlEquipmentPassport": [],
+
+  "hasWheelsWashingPoint": true,
+  "wheelsWashingEquipmentCount": 10,
+  "wheelsWashingEquipmentBrand": "Wheels Washing Co.",
+  "wheelsWashingEquipmentManufacturer": "Wheels Washing Co.",
+  "wheelsWashingEquipmentPhotos": [
+    {
+      "created": "2020-12-11T13:43:01.591Z",
+      "fileDownloadUri": "string",
+      "fileName": "string",
+      "fileType": "string",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "latitude": "string",
+      "longitude": "string",
+      "size": 0
+    }
+  ],
+
+  "hasLocalTreatmentFacilities": true,
+  "localTreatmentFacilitiesCount": 3,
+  "treatmentFacilitiesCapacity": 20,
+  "treatmentFacilitiesPassport": {
+    "created": "2020-12-11T13:43:01.591Z",
+    "fileDownloadUri": "string",
+    "fileName": "string",
+    "fileType": "string",
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "latitude": "string",
+    "longitude": "string",
+    "size": 0
+  },
+  "treatmentFacilitiesPhotos": [
+    {
+      "created": "2020-12-11T13:43:01.591Z",
+      "fileDownloadUri": "string",
+      "fileName": "string",
+      "fileType": "string",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "latitude": "string",
+      "longitude": "string",
+      "size": 0
+    }
+  ],
+  "treatmentFacilitiesType": {
+    "id": 0,
+    "type": {
+      "displayName": "string",
+      "name": "string"
+    },
+    "value": "string"
+  },
+
+  "hasRadiationControl": true,
+  "noRadiationControlReason": "string",
+  "radiationControlEquipmentBrand": "Radiation company",
+  "radiationControlEquipmentCount": 3,
+  "radiationControlEquipmentManufacturer": "Radiation company",
+  "radiationControlEquipmentPassport": {
+    "created": "2020-12-11T13:43:01.591Z",
+    "fileDownloadUri": "string",
+    "fileName": "string",
+    "fileType": "string",
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "latitude": "string",
+    "longitude": "string",
+    "size": 0
+  },
+  "radiationControlEquipmentPhotos": [
+    {
+      "created": "2020-12-11T13:43:01.591Z",
+      "fileDownloadUri": "string",
+      "fileName": "string",
+      "fileType": "string",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "latitude": "string",
+      "longitude": "string",
+      "size": 0
+    }
+  ],
+
+  "hasVideoEquipment": true,
+  "noVideoEquipmentReason": "string",
+  "videoEquipmentCount": 5,
+
+  "hasRoads": true,
+  "roadSurfaceType": {
+    "id": 0,
+    "type": {
+      "displayName": "string",
+      "name": "string"
+    },
+    "value": "string"
+  },
+  "roadsLength": 0,
+  "roadsScheme": {
+    "created": "2020-12-11T13:43:01.591Z",
+    "fileDownloadUri": "string",
+    "fileName": "string",
+    "fileType": "string",
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "latitude": "string",
+    "longitude": "string",
+    "size": 0
+  },
+
+  "hasFences": true,
+  "noFencesReason": "string",
+  "fencesType": {
+    "id": 55,
+    "type": {
+      "displayName": "FENCE_TYPE",
+      "name": "FENCE_TYPE"
+    },
+    "value": "Simple fence"
+  },
+  "fencesPhotos": [
+    {
+      "created": "2020-12-11T13:43:01.591Z",
+      "fileDownloadUri": "string",
+      "fileName": "string",
+      "fileType": "string",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "latitude": "string",
+      "longitude": "string",
+      "size": 0
+    }
+  ],
+
+  "hasLights": true,
+  "noLightsReason": "string",
+  "lightsType": {
+    "id": 44,
+    "type": {
+      "displayName": "LIGHTS_FUNCTIONAL_TYPE",
+      "name": "LIGHTS_FUNCTIONAL_TYPE"
+    },
+    "value": "Light room"
+  },
+
+  "hasSecurity": true,
+  "noSecurityReason": "string",
+  "securityEmployeeCount": 10,
+  "securitySource": {
+    "id": 0,
+    "type": {
+      "displayName": "SECURITY_SOURCE",
+      "name": "SECURITY_SOURCE"
+    },
+    "value": "Masada Security Solutions Ltd."
+  },
+
+  "hasAsuSystem": true,
+  "noAsuReason": "string",
+  "asuName": "Asu test name",
+  "asuFunctions": "makes asu staff",
+
+  "hasEnvironmentMonitoringSystem": true,
+  "noEnvironmentMonitoringSystemReason": "string",
+  "environmentMonitoringSystemsCount": 10,
+  "environmentMonitoringSystemUsed": {
+    "id": 82,
+    "type": {
+      "displayName": "ENVIRONMENT_MONITORING_SYSTEM",
+      "name": "ENVIRONMENT_MONITORING_SYSTEM"
+    },
+    "value": "ROTRONIC"
+  }
+}

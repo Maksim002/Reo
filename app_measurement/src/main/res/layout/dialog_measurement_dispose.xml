@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_with_radius4"
+    android:paddingVertical="@dimen/default_triple_padding">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BaseTextAppearance.ParagraphSmallBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/default_side_padding"
+        android:text="@string/dispose_measurement_dialog_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/BaseTextAppearance.Paragraph.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:paddingHorizontal="@dimen/default_side_padding"
+        android:text="@string/dispose_measurement_dialog_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/leave"
+        style="@style/AppTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/default_side_padding"
+        android:minWidth="100dp"
+        android:text="@string/dispose_measurement_dialog_leave"
+        app:backgroundTint="@color/danger_hover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stay"
+        style="@style/AppTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/default_double_padding"
+        android:minWidth="100dp"
+        android:text="@string/dispose_measurement_dialog_stay"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/leave"
+        app:layout_constraintEnd_toStartOf="@id/leave"
+        app:layout_constraintTop_toTopOf="@id/leave" />
+</androidx.constraintlayout.widget.ConstraintLayout>

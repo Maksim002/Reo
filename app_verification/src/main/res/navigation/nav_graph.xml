@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/checkAuth">
+
+    <fragment
+        android:id="@+id/checkAuth"
+        android:name="ru.ktsstudio.feature_auth.ui.CheckAuthFragment"
+        android:label="AuthState">
+        <action
+            android:id="@+id/action_checkAuth_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/checkAuth"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_checkAuth_to_syncFragment"
+            app:destination="@id/syncFragment"
+            app:popUpTo="@id/checkAuth"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.ktsstudio.feature_auth.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_sync"
+            app:destination="@id/syncFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="ru.ktsstudio.app_verification.ui.tabs.TabsFragment"
+        android:label="TabsFragment"
+        tools:layout="@layout/fragment_tabs">
+
+        <action
+            android:id="@+id/action_tabsFragment_to_objectFilter"
+            app:destination="@id/objectFilterFragment" />
+        <action
+            android:id="@+id/action_tabsFragment_to_syncFragment"
+            app:destination="@id/syncFragment"
+            app:popUpTo="@id/tabsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tabs_to_object_inspection"
+            app:destination="@id/objectInspectionFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tabsFragment_to_objectInfoDialogFragment"
+            app:destination="@id/objectInfoDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/objectInspectionFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_inspection.ObjectInspectionFragment"
+        android:label="objectInspectionFragment"
+        tools:layout="@layout/fragment_object_inspection">
+        <action
+            android:id="@+id/action_inspection_to_object_schedule_survey"
+            app:destination="@id/objectScheduleSurveyFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_inspection_to_general_survey"
+            app:destination="@id/generalSurveyFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_inspection_to_object_technical_survey"
+            app:destination="@id/objectTechnicalSurveyFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_objectInspectionFragment_to_equipmentSurveyFragment"
+            app:destination="@id/equipmentSurveyFragment" />
+        <action
+            android:id="@+id/action_objectInspectionFragment_to_infrastructureSurveyFragment"
+            app:destination="@id/infrastructureSurveyFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_objectInspectionFragment_to_secondaryResourcesSurveyFragment"
+            app:destination="@id/secondaryResourcesSurveyFragment" />
+        <action
+            android:id="@+id/action_inspection_to_product_survey"
+            app:destination="@id/productSurveyFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/objectScheduleSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.schedule.ObjectScheduleSurveyFragment"
+        android:label="objectScheduleSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.general.GeneralSurveyFragment"
+        android:label="generalSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/objectTechnicalSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.tech.ObjectTechnicalSurveyFragment"
+        android:label="objectTechnicalSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/syncFragment"
+        android:name="ru.ktsstudio.feature_sync_impl.ui.SyncFragment"
+        android:label="SyncFragment"
+        tools:layout="@layout/fragment_sync">
+        <action
+            android:id="@+id/action_syncFragment_to_tabsFragment"
+            app:destination="@id/tabsFragment"
+            app:popUpTo="@id/syncFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/objectFilterFragment"
+        android:name="ru.ktsstudio.app_verification.ui.filter.ObjectFilterFragment"
+        android:label="objectFilterFragment"
+        tools:layout="@layout/fragment_object_filter" />
+
+    <dialog
+        android:id="@+id/objectInfoDialogFragment"
+        android:name="ru.ktsstudio.app_verification.ui.map.ObjectInfoDialogFragment"
+        android:label="ObjectInfoDialogFragment"
+        tools:layout="@layout/dialog_object_info">
+        <argument
+            android:name="objectIds"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_object_info_to_object_inspection"
+            app:destination="@id/objectInspectionFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/infrastructureSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.infrastructure.InfrastructureSurveyFragment"
+        android:label="InfrastructureSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/equipmentSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.equipment.EquipmentSurveyFragment"
+        android:label="EquipmentSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondaryResourcesSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.secondary_resources.SecondaryResourcesSurveyFragment"
+        android:label="SecondaryResourcesSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productSurveyFragment"
+        android:name="ru.ktsstudio.app_verification.ui.object_survey.product.ProductSurveyFragment"
+        android:label="ProductSurveyFragment"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="objectId"
+            app:argType="string" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/gpsRequestDialogFragment"
+        android:name="ru.ktsstudio.common.ui.dialog.GpsRequestDialogFragment"
+        android:label="GeoDataRequestDialogFragment"
+        tools:layout="@layout/dialog_permission_request">
+    </dialog>
+
+    <dialog
+        android:id="@+id/ConfirmDialogFragment"
+        android:name="ru.ktsstudio.common.ui.dialog.ConfirmDialogFragment"
+        android:label="ConfirmDialogFragment"
+        tools:layout="@layout/dialog_confirm">
+        <argument
+            android:name="actionKey"
+            app:argType="string" />
+    </dialog>
+
+</navigation>

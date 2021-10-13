@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/strokeLayer">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/strokeWidth"
+                android:color="@color/alto" />
+            <corners android:radius="4dp" />
+            <solid android:color="@color/nested_background_selector"/>
+        </shape>
+    </item>
+</layer-list>

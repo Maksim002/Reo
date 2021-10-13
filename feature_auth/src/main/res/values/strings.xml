@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_enter_title">Вход</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Пароль</string>
+    <string name="login_enter">Войти</string>
+    <string name="login_incorrect_credentials">Введены неверные логин или пароль</string>
+    <string name="form_field_error_password_min_length">Пароль должен содержать минимум 8 символов</string>
+    <string name="form_field_error_password_max_length">Пароль должен быть не длиннее 320 символов</string>
+    <string name="form_field_error_upper_case">Пароль должен содержать заглавную букву</string>
+    <string name="form_field_error_lower_case">Пароль должен содержать строчную букву</string>
+    <string name="form_field_error_number">Пароль должен содержать цифру</string>
+    <string name="form_field_error_special_symbol">Пароль должен содержать специальный символ</string>
+    <string name="form_field_error_empty">Заполните поле</string>
+    <string name="form_field_error_email_format">Неправильный формат email</string>
+    <string name="form_field_error_email_max_length">Email не должен превышать 30 символов</string>
+</resources>

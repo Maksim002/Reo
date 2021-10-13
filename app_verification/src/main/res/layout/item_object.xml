@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+    android:layout_marginVertical="@dimen/default_padding"
+    android:background="@drawable/bg_outlined_with_radius4_filled_with_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/default_double_padding">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/BaseTextAppearance.ParagraphLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:textColor="@color/neutral_800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ООО «Василек»" />
+
+    <TextView
+        android:id="@+id/typeTextView"
+        style="@style/BaseTextAppearance.Paragraph.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_cell_size"
+        app:layout_constraintEnd_toEndOf="@+id/nameTextView"
+        app:layout_constraintStart_toStartOf="@+id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:text="Объект размещения" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        style="@style/BaseTextAppearance.Paragraph.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_cell_size"
+        app:layout_constraintEnd_toEndOf="@+id/nameTextView"
+        app:layout_constraintStart_toStartOf="@+id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/typeTextView"
+        tools:text="Академический район, Москва, Дер. зюзино, микрорайон №5, ул. Первомайская 42-24, 105203" />
+
+
+    <TextView
+        android:id="@+id/dateTitleTextView"
+        style="@style/BaseTextAppearance.Content.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/object_item_date_title"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@id/addressTextView"
+        app:layout_constraintTop_toBottomOf="@id/addressTextView" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/dateTitleTextView"
+        app:layout_constraintStart_toStartOf="@id/dateTitleTextView"
+        app:layout_constraintTop_toBottomOf="@id/dateTitleTextView"
+        tools:text="12.03.2020" />
+
+    <TextView
+        android:id="@+id/statusTitleTextView"
+        style="@style/BaseTextAppearance.Content.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/object_item_status_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dateTitleTextView"
+        app:layout_constraintTop_toTopOf="@id/dateTitleTextView" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/statusTitleTextView"
+        app:layout_constraintStart_toStartOf="@id/statusTitleTextView"
+        app:layout_constraintTop_toBottomOf="@id/statusTitleTextView"
+        tools:text="Запланировано" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

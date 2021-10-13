@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/checkAuth">
+
+    <fragment
+        android:id="@+id/checkAuth"
+        android:name="ru.ktsstudio.feature_auth.ui.CheckAuthFragment"
+        android:label="AuthState">
+        <action
+            android:id="@+id/action_checkAuth_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/checkAuth"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_checkAuth_to_syncFragment"
+            app:destination="@id/syncFragment"
+            app:popUpTo="@id/checkAuth"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.ktsstudio.feature_auth.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_syncFragment"
+            app:destination="@id/syncFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="ru.ktsstudio.reo.ui.tabs.TabsFragment"
+        android:label="TabsFragment"
+        tools:layout="@layout/fragment_tabs">
+
+        <action
+            android:id="@+id/action_tabs_to_measurement_details"
+            app:destination="@id/measurementDetailsFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tabsFragment_to_objectFilter"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_tabsFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_tabsFragment_to_measurementFilterFragment"
+            app:destination="@id/measurementFilterFragment" />
+        <action
+            android:id="@+id/action_tabsFragment_to_mnoInfoDialogFragment"
+            app:destination="@id/mnoInfoDialogFragment" />
+        <action
+            android:id="@+id/action_tabs_to_mno_details"
+            app:destination="@id/mnoDetailsFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tabsFragment_to_syncFragment"
+            app:destination="@id/syncFragment"
+            app:popUpTo="@id/tabsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/syncFragment"
+        android:name="ru.ktsstudio.feature_sync_impl.ui.SyncFragment"
+        android:label="SyncFragment"
+        tools:layout="@layout/fragment_sync">
+        <action
+            android:id="@+id/action_syncFragment_to_tabsFragment"
+            app:destination="@id/tabsFragment"
+            app:popUpTo="@id/syncFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mnoDetailsFragment"
+        android:name="ru.ktsstudio.feature_mno_list.ui.details.MnoDetailsFragment"
+        android:label="MnoDetailsFragment"
+        tools:layout="@layout/fragment_mno_details">
+        <argument
+            android:name="mnoId"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_mnoDetails_to_startMeasurement"
+            app:destination="@+id/startMeasurement"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/measurementDetailsFragment"
+        android:name="ru.ktsstudio.reo.ui.measurement.details.MeasurementDetailsFragment"
+        android:label="MeasurementDetailsFragment"
+        tools:layout="@layout/fragment_measurment_details">
+        <argument
+            android:name="measurementId"
+            app:argType="long" />
+
+        <argument
+            android:name="isPreviewMode"
+            app:argType="boolean" />
+
+        <argument
+            android:name="returnTag"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_measurementDetailsFragment_to_createMeasurement"
+            app:destination="@id/createMeasurement"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="ru.ktsstudio.reo.ui.filter.MnoFilterFragment"
+        android:label="mnoFilterFragment"
+        tools:layout="@layout/fragment_mno_filter" />
+    <fragment
+        android:id="@+id/measurementFilterFragment"
+        android:name="ru.ktsstudio.reo.ui.filter.MeasurementFilterFragment"
+        android:label="MeasurementFilterFragment"
+        tools:layout="@layout/fragment_measurement_filter" />
+
+    <dialog
+        android:id="@+id/mnoInfoDialogFragment"
+        android:name="ru.ktsstudio.reo.ui.map.MnoInfoDialogFragment"
+        android:label="MnoInfoDialogFragment"
+        tools:layout="@layout/dialog_mno_info">
+        <argument
+            android:name="objectIds"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_mno_info_to_mno_details"
+            app:destination="@id/mnoDetailsFragment" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/startMeasurement"
+        android:name="ru.ktsstudio.reo.ui.measurement.start.StartMeasurementFragment"
+        android:label="StartMeasurement"
+        tools:layout="@layout/fragment_start_measurement">
+        <argument
+            android:name="mnoId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_startMeasurement_to_createMeasurement"
+            app:destination="@+id/createMeasurement"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createMeasurement"
+        android:name="ru.ktsstudio.reo.ui.measurement.create.CreateMeasurementFragment"
+        android:label="CreateMeasurement"
+        tools:layout="@layout/fragment_create_measurement">
+        <argument
+            android:name="mnoId"
+            app:argType="string" />
+
+        <argument
+            android:name="measurementLocalId"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_createMeasurement_to_addContainer"
+            app:destination="@+id/addContainer"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_createMeasurement_to_editMixedContainer"
+            app:destination="@id/editMixedContainer"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_createMeasurement_to_editSeparateContainer"
+            app:destination="@id/editSeparateContainer"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_createMeasurement_to_disposeMeasurementCardDialogFragment"
+            app:destination="@id/disposeMeasurementCardDialogFragment" />
+        <action
+            android:id="@+id/action_createMeasurement_to_measurementDetailsFragment"
+            app:destination="@id/measurementDetailsFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_createMeasurement_to_editMorphologyFragment"
+            app:destination="@id/editMorphologyFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addContainer"
+        android:name="ru.ktsstudio.reo.ui.measurement.add_container.AddContainerFragment"
+        android:label="AddContainer"
+        tools:layout="@layout/fragment_add_container">
+
+        <argument
+            android:name="measurementLocalId"
+            app:argType="long" />
+
+        <argument
+            android:name="mnoId"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_addContainer_to_editMixedContainer"
+            app:destination="@+id/editMixedContainer"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_addContainer_to_editSeparateContainer"
+            app:destination="@+id/editSeparateContainer"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editMixedContainer"
+        android:name="ru.ktsstudio.reo.ui.measurement.edit_mixed_container.EditMixedContainerFragment"
+        android:label="EditMixedContainer"
+        tools:layout="@layout/fragment_edit_container">
+
+        <argument
+            android:name="measurementId"
+            app:argType="long" />
+
+        <argument
+            android:name="containerId"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="mnoContainerId"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="containerTypeId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editSeparateContainer"
+        android:name="ru.ktsstudio.reo.ui.measurement.edit_separate_container.EditSeparateContainerFragment"
+        android:label="EditSeparateContainer"
+        tools:layout="@layout/fragment_edit_container">
+
+        <action
+            android:id="@+id/action_editSeparateContainer_to_editWasteType"
+            app:destination="@+id/editWasteType"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <argument
+            android:name="measurementId"
+            app:argType="long" />
+
+        <argument
+            android:name="containerId"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="mnoContainerId"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="containerTypeId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editWasteType"
+        android:name="ru.ktsstudio.reo.ui.measurement.edit_waste_type.EditWasteTypeFragment"
+        android:label="EditWasteType"
+        tools:layout="@layout/fragment_edit_container">
+
+        <argument
+            android:name="containerId"
+            app:argType="long" />
+
+        <argument
+            android:name="wasteTypeId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/disposeMeasurementCardDialogFragment"
+        android:name="ru.ktsstudio.reo.ui.measurement.create.DisposeMeasurementCardDialogFragment"
+        android:label="DisposeMeasurementCardDialogFragment"
+        tools:layout="@layout/dialog_measurement_dispose">
+        <argument
+            android:name="actionKey"
+            app:argType="string" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/editMorphologyFragment"
+        android:name="ru.ktsstudio.reo.ui.measurement.morphology.section.EditMorphologyFragment"
+        android:label="EditMorphologyFragment"
+        tools:layout="@layout/fragment_edit_container">
+        <argument
+            android:name="measurementId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_editMorphologyFragment_to_editMorphologyItemFragment"
+            app:destination="@id/editMorphologyItemFragment"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editMorphologyItemFragment"
+        android:name="ru.ktsstudio.reo.ui.measurement.morphology.item_info.EditMorphologyItemFragment"
+        android:label="EditMorphologyItemFragment"
+        tools:layout="@layout/fragment_edit_container">
+        <argument
+            android:name="measurementId"
+            app:argType="long" />
+
+        <argument
+            android:name="morphologyId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/gpsRequestDialogFragment"
+        android:name="ru.ktsstudio.common.ui.dialog.GpsRequestDialogFragment"
+        android:label="GeoDataRequestDialogFragment"
+        tools:layout="@layout/dialog_permission_request">
+    </dialog>
+
+</navigation>

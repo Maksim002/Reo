@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_outlined_selectable_with_radius4"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="@dimen/default_double_padding"
+    android:paddingVertical="@dimen/default_double_padding">
+
+    <TextView
+        android:id="@+id/wasteGroup"
+        style="@style/BaseTextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Пластик" />
+
+    <TextView
+        android:id="@+id/wasteSubgroup"
+        style="@style/BaseTextAppearance.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/default_padding"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/proceedIcon"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/wasteGroup"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Резина Резина РезинаРезина Резина РезинаРезина Резина РезинаРезина Резина РезинаРезина Резина РезинаРезина Резина РезинаРезина Резина РезинаРезина Резина Резина " />
+
+    <ImageView
+        android:id="@+id/proceedIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+apply plugin: "com.betomorrow.appcenter"
+
+appcenter {
+    ownerName = "REO"
+    apiToken = "59f29b041b9711e34e42f1a5183ce303a5decb12"
+    apps {
+        debug {
+            appName = "DEV-Measurement"
+            distributionGroups = ["Collaborators", "public"]
+        }
+        release {
+            appName = "RELEASE-Measurement"
+            distributionGroups = ["Collaborators", "public"]
+        }
+    }
+}

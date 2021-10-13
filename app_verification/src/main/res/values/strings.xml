@@ -1,0 +1,305 @@
+<resources>
+    <string name="app_name">Верификация</string>
+    <string name="object_info_route">Маршрут</string>
+    <string name="object_info_date">Дата тех. обследования</string>
+    <string name="object_info_status">Статус</string>
+    <string name="object_info_open_inspection">Провести техническое обследование</string>
+    <string name="object_info_empty_title">Список объектов пуст</string>
+
+    <string name="verification_map_title">Карта объектов ТО</string>
+    <string name="verification_object_list_title">Объекты по обращению с ТКО</string>
+    <string name="verification_map_search_hint">Поиск</string>
+
+    <string name="bottom_navigation_objects_map">Карта объектов</string>
+    <string name="bottom_navigation_objects_list">Список объектов</string>
+    <string name="bottom_navigation_settings">Настройки</string>
+
+    <string name="object_list_search_hint">Поиск</string>
+    <string name="object_item_date_title">Дата проведения технического обследования</string>
+    <string name="object_item_status_title">Статус технического обследования</string>
+
+    <string name="object_inspection_toolbar_title">Техническое обследование</string>
+    <string name="object_inspection_fill_label">Заполните следующие этапы</string>
+    <string name="object_inspection_card_label_main_info">Общая информация</string>
+    <string name="object_inspection_card_label_product_info">Информация о выпускаемых товарах</string>
+    <string name="object_inspection_card_label_schedule">График работы</string>
+    <string name="object_inspection_card_label_tech">Технологическая часть</string>
+    <string name="object_inspection_card_label_infrastructure">Объекты инфраструктуры</string>
+    <string name="object_inspection_card_label_equipment">Оборудование</string>
+    <string name="object_inspection_card_label_secondary_resources">ВМР</string>
+    <string name="object_inspection_card_progress">%1$d/%2$d</string>
+    <string name="object_inspection_send">Отправить</string>
+
+    <string name="filter_status_title">Статус проведения технического обследования (инвентаризации)</string>
+    <string name="filter_status_hint">Выберите статус</string>
+    <string name="filter_category_title">Категория объекта</string>
+    <string name="filter_category_hint">Выберите категорию</string>
+    <string name="filter_region_title">Субъект Российской Федерации</string>
+    <string name="filter_region_hint">Выберите субъект Российской Федерации</string>
+    <string name="filter_survey_status_title">Статус технического обследования</string>
+    <string name="filter_survey_status_hint">Выберите статус</string>
+
+    <string name="object_sort_by_name_descending">По имени (по убыванию)</string>
+    <string name="object_sort_by_name_ascending">По имени (по возрастанию)</string>
+    <string name="object_sort_by_created_at_descending">По дате (по убыванию)</string>
+    <string name="object_sort_by_created_at_ascending">По дате (по возрастанию)</string>
+    <string name="object_sort_by_status_descending">По статусу (по убыванию)</string>
+    <string name="object_sort_by_status_ascending">По статусу (по возрастанию)</string>
+
+    <string name="object_type_treatment">Объект обработки отходов</string>
+    <string name="object_type_placement">Объект размещения отходов</string>
+    <string name="object_type_recycling">Объект утилизации отходов</string>
+    <string name="object_type_disposal">Объект обезвреживания отходов</string>
+
+    <string name="survey_name_hint">Укажите наименование</string>
+    <string name="survey_save">Сохранить</string>
+    <string name="survey_add">Добавить</string>
+    <string name="survey_media_update_not_complete">Загрузка медиа не завершена</string>
+    <string name="survey_reason_label">Причина</string>
+    <string name="survey_reason_hint">Укажите причину</string>
+    <string name="survey_time_hint">Введите график работы</string>
+    <string name="survey_number_hint">Введите число</string>
+    <string name="survey_save_confirm_title">Сохранение этапа</string>
+    <string name="survey_save_confirm_message">Объекты с незаполненными данными будут удалены, вы уверены?</string>
+    <string name="survey_power_hint">Укажите мощность</string>
+    <string name="survey_material_hint">Укажите материал</string>
+    <string name="survey_purpose_hint">Укажите назначение</string>
+    <string name="survey_weight_hint">Укажите массу</string>
+    <string name="survey_area_hint">Укажите площадь</string>
+    <string name="survey_height_hint">Укажите высоту</string>
+    <string name="survey_relief_hint">Укажите перепад высот на участке, наличие заболоченных территорий, лесных массивов</string>
+    <string name="survey_area_wastes_hint">Напишите, какие отходы накапливаются на площадке об отходах</string>
+    <string name="survey_receiving_wastes_types_hint">Укажите все виды используемых для производства товаров и услуг отходы или вторичные материальные ресурсы</string>
+    <string name="survey_tech_process_hint">Кратко опишите процесс</string>
+    <string name="geo_data_request_dialog_message_photo_creation">Геоданные нужны для определения геопозиции сделанной фотографии</string>
+    <string name="geo_data_request_reject_toast_photo_creation">Создание фотографии без геопозиции невозможно</string>
+    <string name="geo_data_empty">Геопозиция недоступна</string>
+    <string name="survey_choose_hint">Не выбран</string>
+    <string name="survey_other_status_name">Иной статус</string>
+    <string name="survey_other_status_hint">Укажите статус</string>
+    <string name="survey_equipment_count_hint">Укажите количество</string>
+
+    <string name="survey_general_federal_district_label">Наименование субъекта Российской Федерации</string>
+    <string name="survey_general_object_name_label">Наименование объекта</string>
+    <string name="survey_general_object_category_label">Вид обращения с отходами</string>
+    <string name="survey_general_fias_address_label">Адрес объекта согласно ФИАС</string>
+    <string name="survey_general_address_description_label">Адрес объекта</string>
+    <string name="survey_general_address_description_hint">Введите адрес объекта или ближайший адрес</string>
+    <string name="survey_general_object_status_label">Статус объекта</string>
+
+
+    <string name="survey_schedule_title">График работы</string>
+    <string name="survey_week_schedule_title">Расписание</string>
+    <string name="survey_schedule_every_day_title">Ежедневно</string>
+    <string name="survey_schedule_full_day_title">Круглосуточно</string>
+    <string name="survey_schedule_without_breaks_title">Без перерыва</string>
+    <string name="survey_schedule_break_title">Перерыв</string>
+    <string name="survey_schedule_work_mode_title">Режим работы</string>
+    <string name="survey_schedule_break_description">Перерыв указывается суммарно за весь день</string>
+    <string name="survey_schedule_work_schedule">Режим работы</string>
+    <string name="survey_schedule_shift_per_day">Количество рабочих смен в сутки</string>
+    <string name="survey_schedule_workdays_per_year">Количество рабочих дней в году</string>
+    <string name="survey_schedule_workplace_count">Количество рабочих мест</string>
+    <string name="survey_schedule_management_personnel_count">Количество управленческого персонала</string>
+    <string name="survey_schedule_production_personnel_count">Количество производственного персонала</string>
+
+    <string name="survey_equipment_add">Добавить оборудование</string>
+    <string name="survey_equipment_empty">Список оборудования пуст</string>
+    <string name="survey_equipment_equipment_title">Оборудование</string>
+    <string name="survey_equipment_conveyor_title">Конвейеры</string>
+    <string name="survey_equipment_serving_conveyor_title">Подающий конвейер</string>
+    <string name="survey_equipment_sort_conveyor_title">Сортировочный конвейер</string>
+    <string name="survey_equipment_reverse_conveyor_title">Реверсивный конвейер</string>
+    <string name="survey_equipment_press_conveyor_title">Подающий конвейер пресса ВМР</string>
+    <string name="survey_equipment_other_conveyor_title">Иные конвейеры</string>
+    <string name="survey_equipment_back_breaker_conveyor_title">Разрыватель пакетов</string>
+
+    <string name="survey_equipment_separator_title">Сепараторы</string>
+    <string name="survey_equipment_separator_metal_title">Сепаратор цветных металлов</string>
+    <string name="survey_equipment_separator_iron_title">Сепаратор чёрных металлов</string>
+    <string name="survey_equipment_separator_optic_title">Оптический сепаратор</string>
+    <string name="survey_equipment_separator_eddy_current_title">Вихретоковой сепаратор</string>
+    <string name="survey_equipment_separator_ballistic_title">Баллистический сепаратор</string>
+    <string name="survey_equipment_separator_fraction_title">Сепаратор легкой и тяжелой фракции</string>
+    <string name="survey_equipment_separator_vibration_title">Вибрационный сепаратор</string>
+    <string name="survey_equipment_separator_plastic_title">Перфоратор ПЭТ-тары</string>
+    <string name="survey_equipment_separator_other_title">Иные сепараторы</string>
+    <string name="survey_equipment_label_separator_other_name">Наименование сепаратора</string>
+
+    <string name="survey_equipment_press_title">Прессы</string>
+    <string name="survey_equipment_press_horizontal_title">Горизонтальные прессы</string>
+    <string name="survey_equipment_press_vertical_title">Вертикальные прессы</string>
+    <string name="survey_equipment_press_compactor_title">Пресс компакторы</string>
+    <string name="survey_equipment_press_packing_machines_title"> Упаковочные машины для ТКО</string>
+    <string name="survey_equipment_press_other_title">Иные прессы</string>
+    <string name="survey_equipment_label_press_other_name">Наименование пресса</string>
+
+    <string name="survey_equipment_hint_additional_type">Не указано</string>
+    <string name="survey_equipment_label_additional_type">Тип оборудования</string>
+    <string name="survey_equipment_additional_equipment_title">Дополнительное оборудование</string>
+    <string name="survey_equipment_additional_other_title">Иное оборудование</string>
+    <string name="survey_equipment_label_additional_other_name">Наименование оборудования</string>
+
+    <string name="survey_equipment_label_brand">Марка</string>
+    <string name="survey_equipment_label_manufacturer">Производитель</string>
+    <string name="survey_equipment_label_count">Количество оборудования</string>
+    <string name="survey_equipment_label_conveyor_length">Длина конвейера (м)</string>
+    <string name="survey_equipment_label_conveyor_width">Ширина конвейера (м)</string>
+    <string name="survey_equipment_label_conveyor_speed">Рабочая скорость линии конвейера (м/мин)</string>
+    <string name="survey_equipment_label_conveyor_load_mechanism">Механизм загрузки отходов на подающий конвейер</string>
+    <string name="survey_equipment_label_conveyor_waste_height">Толщина слоя отходов подающихся на конвейер (см)</string>
+    <string name="survey_equipment_label_conveyor_sort_point">Количество постов сортировки (шт.)</string>
+    <string name="survey_equipment_label_photo">Фото оборудования</string>
+    <string name="survey_equipment_label_passport">Паспорт оборудования</string>
+    <string name="survey_equipment_label_conveyor_other_name">Наименование конвейера</string>
+
+    <string name="survey_equipment_hint_brand">Укажите марку</string>
+    <string name="survey_equipment_hint_manufacturer">Укажите производителя</string>
+    <string name="survey_equipment_hint_conveyor_type">Укажите тип</string>
+    <string name="survey_equipment_hint_conveyor_length">Укажите общую длину</string>
+    <string name="survey_equipment_hint_conveyor_width">Укажите ширину в метрах до сотых</string>
+    <string name="survey_equipment_hint_conveyor_speed">Укажите скорость</string>
+    <string name="survey_equipment_hint_conveyor_load_mechanism">Опишите механизм</string>
+    <string name="survey_equipment_hint_conveyor_waste_height">Укажите толщину</string>
+    <string name="survey_equipment_hint_conveyor_waste_sort_point">Укажите количество постов</string>
+
+    <string name="survey_infrastructure_has_weight_control_equipment_label">Наличие весового контроля</string>
+    <string name="survey_infrastructure_equipment_label">Оборудование</string>
+    <string name="survey_infrastructure_count_equipment_hint">Укажите количество оборудования</string>
+    <string name="survey_infrastructure_platform_length_label">Длина весовой платформы (м)</string>
+    <string name="survey_infrastructure_platform_length_hint">Укажите длину</string>
+
+    <string name="survey_infrastructure_title">Объекты инфраструктуры</string>
+    <string name="survey_infrastructure_not_filled_form">Не все верфицированные разделы были заполнены верно</string>
+    <string name="survey_infrastructure_incorrect_form">Верфицированные разделы некорректно заполнены</string>
+    <string name="survey_infrastructure_has_wheel_washing_point_label">Наличие пункта мойки колёс</string>
+    <string name="survey_infrastructure_has_sewage_plant_label">Наличие локальных очистных сооружений</string>
+    <string name="survey_infrastructure_has_radiation_control_label">Наличие радиационного контроля</string>
+    <string name="survey_infrastructure_has_security_camera_label">Наличие видеонаблюдения</string>
+    <string name="survey_infrastructure_has_roads_label">Наличие обустроенной сети дорог</string>
+    <string name="survey_infrastructure_has_fences_label">Наличие ограждения по периметру объекта</string>
+    <string name="survey_infrastructure_has_lights_label">Наличие освещения на объекте для работы в тёмное время суток</string>
+    <string name="survey_infrastructure_has_security_station_label">Наличие пункта охраны</string>
+    <string name="survey_infrastructure_has_asu_label">Наличие автоматической системы управления</string>
+    <string name="survey_infrastructure_sewage_plant_type_label">Вид очистных сооружений</string>
+    <string name="survey_infrastructure_roads_type_label">Тип покрытия дорог</string>
+    <string name="survey_infrastructure_fences_type_label">Тип ограждения</string>
+    <string name="survey_infrastructure_lights_type_label">Тип освещения</string>
+    <string name="survey_infrastructure_security_source_label">Охрана объекта</string>
+    <string name="survey_infrastructure_security_source_hint">Укажите, кто охраняет объект</string>
+    <string name="survey_infrastructure_roads_length_label">Общая длина проезжей части дорог (км)</string>
+    <string name="survey_infrastructure_roads_length_hint">Не указано</string>
+    <string name="survey_infrastructure_survey_select_type_hint">Не выбран</string>
+    <string name="survey_infrastructure_sewage_plant_power_label">Мощность очистных сооружений</string>
+    <string name="survey_infrastructure_security_staff_count_label">Количество сотрудников осуществляющих охрану</string>
+    <string name="survey_infrastructure_security_staff_count_hint">Не указано</string>
+    <string name="survey_infrastructure_asu_name_label">Назначение системы</string>
+    <string name="survey_infrastructure_asu_functions_label">Функции системы</string>
+    <string name="survey_infrastructure_asu_functions_hint">Укажите информацию</string>
+    <string name="survey_infrastructure_fences_photos_label">Фото ограждения</string>
+    <string name="survey_infrastructure_road_scheme_label">Схема движения транспорта на объекте</string>
+    <string name="survey_infrastructure_equipment_passport_label">Паспорт оборудования</string>
+    <string name="survey_infrastructure_sewage_plant_photos_label">Фото очистных сооружений и оборудования</string>
+    <string name="survey_infrastructure_has_environment_monitoring_label">Наличие системы мониторинга окружающей среды</string>
+    <string name="survey_infrastructure_environment_monitoring_system_type_label">Тип системы мониторинга окружающей среды</string>
+    <string name="survey_infrastructure_environment_monitoring_system_count_label">Количество систем мониторинга окружающей среды</string>
+    <string name="survey_infrastructure_environment_monitoring_system_count_hint">Не указано</string>
+    <string name="survey_infrastructure_environment_monitoring_system_add_button">Добавить систему мониторинга</string>
+    <string name="survey_infrastructure_environment_monitoring_system_equipment_title">Системы мониторинга</string>
+
+
+    <string name="survey_technical_title">Технологическая часть</string>
+    <string name="survey_technical_tko_weight_for_last_year">Масса ТКО, принятых в прошлом году (тыс. тонн)</string>
+    <string name="survey_technical_other_wastes_weight_for_last_year">Масса других видов отходов, принятых в прошлом году (тыс. тонн)</string>
+    <string name="survey_technical_object_area">Общая площадь объекта (кв. м)</string>
+    <string name="survey_technical_object_photos">Фото объекта</string>
+    <string name="survey_technical_production_area">Площадь производственной части объекта (кв. м)</string>
+    <string name="survey_technical_production_photos">Фото производственной части</string>
+    <string name="survey_technical_waste_unloading_area">Площадь зоны для разгрузки поступающих отходов (кв. м)</string>
+    <string name="survey_technical_sort_department_area">Площадь цеха сортировки отходов (кв. м)</string>
+    <string name="survey_technical_has_compost_area">Наличие участка компостирования отходов</string>
+    <string name="survey_technical_compost_area_power">Мощность участка (тонн в год)</string>
+    <string name="survey_technical_compost_material">Входящий материал для компостирования</string>
+    <string name="survey_technical_compost_purpose">Назначение полученного компоста</string>
+    <string name="survey_technical_has_rdf_area">Наличие участка производства RDF</string>
+    <string name="survey_technical_rdf_power">Мощность участка (тонн в год)</string>
+    <string name="survey_technical_rdf_purpose">Назначение полученного RDF</string>
+    <string name="survey_technical_scheme_photos">Технологические схемы объекта</string>
+    <string name="survey_technical_tech_schema">Технологическая схема движения отходов (при наличии)</string>
+    <string name="survey_technical_general_schema">Общая схема объекта (при наличии)</string>
+    <string name="survey_technical_production_schema">Схема производственной части (при наличии)</string>
+    <string name="survey_technical_object_body_area">Площадь тела объекта размещения отходов (кв. м)</string>
+    <string name="survey_technical_polygon_height">Полная проектная высота полигона (м)</string>
+    <string name="survey_technical_waterproofing_type_hint">Не выбран</string>
+    <string name="survey_technical_waterproofing_type">Тип гидроизоляции участка размещения отходов</string>
+    <string name="survey_technical_groundwater_depth_hint">Укажите глубину</string>
+    <string name="survey_technical_groundwater_depth">Глубина залегания грунтовых вод (м)</string>
+    <string name="survey_technical_relief">Рельеф участка</string>
+    <string name="survey_technical_waste_placement_map_title">Карты для размещения отходов</string>
+    <string name="survey_technical_waste_placement_count">Количество карт</string>
+    <string name="survey_technical_waste_placement_map_commissioning_period_label">Период ввода в эксплуатацию</string>
+    <string name="survey_technical_waste_placement_map_commissioning_period_hint">Укажите период</string>
+    <string name="survey_technical_waste_placement_map_area_label">Размер (кв. м)</string>
+    <string name="survey_technical_waste_placement_map_area_hint">Укажите размер</string>
+    <string name="survey_technical_waste_placement_map_add">Добавить карту</string>
+    <string name="survey_technical_waste_placement_map_empty">Список карт пуст</string>
+    <string name="survey_technical_can_flooding">Возможность подтопления участка</string>
+    <string name="survey_technical_has_waste_sealant">Наличие уплотнителя отходов</string>
+    <string name="survey_technical_sealant_type_hint">Не выбран</string>
+    <string name="survey_technical_sealant_type">Тип и модель уплотнителя отходов</string>
+    <string name="survey_technical_sealant_weight_hint">Укажите массу</string>
+    <string name="survey_technical_sealant_weight">Эксплуатационная масса уплотнителя отходов</string>
+    <string name="survey_technical_sealant_photos">Фотографии уплотнителя отходов</string>
+    <string name="survey_technical_recycling_type_hint">Не выбрана</string>
+    <string name="survey_technical_recycling_type">Вид утилизации</string>
+    <string name="survey_technical_tech_process_comment">Описание технологического процесса</string>
+    <string name="survey_technical_has_temporary_waste_accumulation">Наличие площадки временного накопления отходов</string>
+    <string name="survey_technical_temporary_waste_area">Площадь площадки (кв.м) </string>
+    <string name="survey_technical_temporary_wastes">Отходы на площадке</string>
+    <string name="survey_technical_received_wastes">Виды принимаемых отходов или вторичных материальных ресурсов</string>
+    <string name="survey_technical_received_wastes_weight_this_year">Масса планируемых к принятию ВМР в текущем году (тыс. тонн)</string>
+    <string name="survey_technical_received_wastes_weight_last_year">Масса принятых ВМР в предыдущем году (тыс. тонн)</string>
+    <string name="survey_technical_has_main_production_equipment">Основное производственное оборудование</string>
+    <string name="survey_technical_has_support_production_equipment">Вспомогательное производственное оборудование</string>
+    <string name="survey_technical_support_production_equipment_power">Проектная мощность (масса принимаемых отходов используемая для стабильной работы вспомогательного производственного оборудования за 1 год, в тыс. тонн)</string>
+    <string name="survey_technical_has_thermal_energy_production">Вырабатывается ли электроэнергия в процессе обезвреживания отходов термическим способом</string>
+    <string name="survey_technical_thermal_energy_production_power">Мощность (мВт)</string>
+    <string name="survey_technical_equipment_production_label">Выпускаемая продукция</string>
+    <string name="survey_technical_equipment_production_hint">Опишите продукцию</string>
+    <string name="survey_technical_equipment_power_label">Проектная мощность оборудования</string>
+    <string name="survey_technical_equipment_photo">Фото оборудования и выпускаемой продукции</string>
+
+    <string name="survey_secondary_resources_title">Вторичные материальные ресурсы</string>
+    <string name="survey_secondary_resources_extract_percent_label">Процент извлекаемых вторичных материальных ресурсов по массе (%)</string>
+    <string name="survey_secondary_resources_extract_percent_without_types">Процент нераспределенных вторичных материальных ресурсов по массе (%)</string>
+    <string name="survey_secondary_resources_type_section_label">Типы ВМР</string>
+    <string name="survey_secondary_resources_type_label">Тип ВМР</string>
+    <string name="survey_secondary_resources_type_percent_label">Процент от массы входного потока (%)</string>
+    <string name="survey_secondary_resources_type_empty">Список типов пуст</string>
+    <string name="survey_secondary_resources_incorrect_form">Убедитесь, что все поля заполнены и верифицированы, а суммарное значение процентов массы входного потока по каждому виду ВМР не превышает общий процент извлекаемых вторичных материальных ресурсов по массе</string>
+
+
+    <string name="survey_secondary_resources_type_hint">Не выбран</string>
+    <string name="survey_secondary_resources_type_percent_hint">Укажите количество</string>
+    <string name="survey_secondary_resources_other_type">Иной тип ВМР</string>
+
+    <string name="survey_production_production_capacity_label">Общее количество выпускаемых товаров в год (тыс. тонн в год)</string>
+    <string name="survey_production_production_capacity_hint">Укажите количество товаров</string>
+
+    <string name="survey_production_products_title">Вид и объём выпускаемых товаров</string>
+    <string name="survey_production_name_label">Наименование выпускаемых товаров</string>
+    <string name="survey_production_volume_label">Объём выпускаемых товаров (тыс. тонн в год)</string>
+    <string name="survey_production_volume_hint">Укажите объём</string>
+    <string name="survey_production_photo_label">Фото выпускаемых товаров</string>
+    <string name="survey_production_add_product_type">Добавить наименование товара</string>
+    <string name="survey_production_products_empty_text">Список товаров пуст</string>
+
+    <string name="survey_production_services_title">Предоставляемые услуги</string>
+    <string name="survey_production_service_name_label">Наименование предоставляемой услуги</string>
+    <string name="survey_production_volume_services_label">Объём предоставляемой услуги (в единицах измерения услуги)</string>
+    <string name="survey_production_volume_services_hint">Укажите объём</string>
+    <string name="survey_production_service_unit_label">Единица измерения услуги</string>
+    <string name="survey_production_service_unit_hint">Укажите единицу измерения</string>
+    <string name="survey_production_add_service">Добавить наименование предоставляемой услуги</string>
+    <string name="survey_production_services_empty_text">Список услуг пуст</string>
+</resources>

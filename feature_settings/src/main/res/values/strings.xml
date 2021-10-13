@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Настройки</string>
+    <string name="settings_support_title">Техподдержка</string>
+    <string name="settings_support_subtitle">Вы можете связаться с технической поддержкой следующими способами:</string>
+    <string name="settings_support_email_label">Написать на почту</string>
+    <string name="settings_support_call_label">Позвонить по телефону </string>
+    <string name="settings_exit">Выйти</string>
+    <string name="settings_exit_error">Не удалось выйти</string>
+</resources>

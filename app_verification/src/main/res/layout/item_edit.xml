@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textInputLayout"
+    style="@style/BaseTextInput"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/large_control_height"
+    android:background="@drawable/bg_outlined_with_radius4"
+    app:layout_constraintEnd_toStartOf="@+id/checkBox"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/labelTextView">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputEditText"
+        style="@style/BaseTextAppearance.AppTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        tools:hint="Укажите мощность" />
+</com.google.android.material.textfield.TextInputLayout>

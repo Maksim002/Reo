@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/filter_bg_color"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/itemTitleTextView"
+        style="@style/BaseTextAppearance.Paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/large_text_size"
+        android:maxLines="1"
+        android:textColor="@color/filter_text_color"
+        tools:text="ИП «Макинтош»" />
+
+    <TextView
+        android:id="@+id/itemCategoryTextView"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/filter_subtitle_text_color"
+        tools:text="ИП «Макинтош»" />
+
+    <TextView
+        android:id="@+id/itemAddressTextView"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/filter_text_color"
+        tools:text="ИП «Макинтош»" />
+
+</LinearLayout>

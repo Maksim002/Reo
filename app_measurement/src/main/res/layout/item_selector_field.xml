@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BaseTextAppearance.Paragraph.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        tools:text="Наполненность емкости" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wasteCategoriesWrapper"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_control_height"
+        app:hintEnabled="false">
+
+        <AutoCompleteTextView
+            android:id="@+id/wasteCategoriesDropdown"
+            style="@style/BaseTextAppearance.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownHeight="wrap_content"
+            android:hint="@string/edit_waste_type_add_waste_category_hint"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_mno_map"
+        android:icon="@drawable/ic_recycle_marker"
+        android:title="@string/bottom_navigation_map" />
+
+    <item
+        android:id="@+id/item_mno_list"
+        android:icon="@drawable/ic_list"
+        android:title="@string/bottom_navigation_mno_list" />
+
+    <item
+        android:id="@+id/item_measurements"
+        android:icon="@drawable/ic_measurement"
+        android:title="@string/bottom_navigation_measurements" />
+
+    <item
+        android:id="@+id/item_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/bottom_navigation_settings" />
+
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            paddingLeftSystemWindowInsets="@{true}"
+            paddingRightSystemWindowInsets="@{true}"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingVertical="@dimen/default_triple_padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/bottomBlock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <FrameLayout
+            android:id="@+id/bottomBlock"
+            paddingBottomSystemWindowInsets="@{true}"
+            paddingLeftSystemWindowInsets="@{true}"
+            paddingRightSystemWindowInsets="@{true}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?colorSurface"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingVertical="@dimen/default_double_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addMeasurementButton"
+                style="@style/AppTextButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_control_height"
+                android:text="@string/mno_add_measurement_text"
+                app:backgroundTint="?colorPrimary" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

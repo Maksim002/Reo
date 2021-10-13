@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mno_list_title">Список МНО</string>
+    <string name="mno_list_empty_title">Список МНО пуст</string>
+    <string name="mno_list_search_hint">Поиск МНО</string>
+    <plurals name="mno_item_measure_count">
+        <item quantity="one">%1$d замер</item>
+        <item quantity="few">%1$d замера</item>
+        <item quantity="many">%1$d замеров</item>
+        <item quantity="other">%1$d замеров</item>
+    </plurals>
+    <string name="mno_item_containers_title">Ёмкости на объекте</string>
+    <string name="mno_item_containers_count">%1$d шт.</string>
+    <string name="mno_details_title">Информация о МНО</string>
+    <string name="mno_add_measurement_text">Создать карточку замера</string>
+    <string name="mno_details_object_info_title">Информация об объекте</string>
+    <string name="mno_details_task_id_label">Идентификатор задания</string>
+    <string name="mno_details_mno_id_label">Идентификатор МНО</string>
+    <string name="mno_details_coordinates_label">Координаты</string>
+    <string name="mno_details_source_title">Информация об источниках образования отходов</string>
+    <string name="mno_details_name_label">Наименование источника образования отходов</string>
+    <string name="mno_details_type_label">Тип источника образования отходов</string>
+    <string name="mno_details_category_label">Категория объекта</string>
+    <string name="mno_details_subcategory_label">Подкатегория объекта</string>
+    <string name="mno_details_unit_label">Тип расчётной единицы</string>
+    <string name="mno_details_unit_count_label">Количество расчётных единиц</string>
+    <string name="mno_details_alt_unit_label">Тип альтернативной расчётной единицы</string>
+    <string name="mno_details_alt_unit_count_label">Количество альтернативных расчётных единиц</string>
+    <string name="mno_details_source_address_title">Параметры адреса источника образования отходов</string>
+    <string name="mno_details_source_address_label">Адрес</string>
+    <string name="mno_details_source_address_federal_label">Федеральный округ</string>
+    <string name="mno_details_source_address_region_label">Наименование региона</string>
+    <string name="mno_details_source_address_municipal_label">Муниципальный район/округ</string>
+    <string name="mno_details_source_address_city_label">Город</string>
+    <string name="mno_details_source_address_administrative_district_label">Внутригородская территория</string>
+    <string name="mno_details_source_address_locality_label">Населённый пункт</string>
+    <string name="mno_details_source_address_street_label">Элемент улично-дорожной сети</string>
+    <string name="mno_details_source_address_index_label">Почтовый индекс</string>
+    <string name="mno_details_source_address_building_label">Номер здания/сооружения</string>
+    <string name="mno_details_source_address_room_label">Номер помещения</string>
+    <string name="mno_details_source_address_land_plot_label">Номер земельного участка</string>
+    <string name="mno_details_measurements_title">Информация о замерах на объекте</string>
+    <string name="mno_details_measurements_count_label">Количество замеров</string>
+    <string name="mno_details_containers_title">Информация о ёмкостях</string>
+    <string name="mno_details_containers_count_label">Количество ёмкостей</string>
+    <string name="mno_details_container_type_label">Тип</string>
+    <string name="mno_details_container_volume_label">Объём ёмкости</string>
+    <string name="mno_details_container_volume_value">%s м3</string>
+    <string name="mno_details_container_schedule_label">График вывоза отходов</string>
+</resources>

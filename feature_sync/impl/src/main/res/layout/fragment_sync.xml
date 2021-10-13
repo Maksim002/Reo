@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdrop_login">
+
+    <ProgressBar
+        android:id="@+id/pb_primary"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@id/view_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <ImageView
+        android:id="@+id/view_error"
+        app:srcCompat="@drawable/ic_cancel"
+        app:tint="?errorColor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pb_primary" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/BaseTextAppearance.DefaultParagraphBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_error"
+        tools:text="Синхронизация данных" />
+
+    <TextView
+        android:id="@+id/tv_body"
+        style="@style/BaseTextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_double_padding"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1"
+        app:layout_constraintBottom_toTopOf="@id/btn_retry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Подождите, приложение обновляет данные для работы..." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retry"
+        style="@style/AppTextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/sync_retry"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/btn_skip"
+        app:layout_constraintEnd_toEndOf="@id/btn_skip"
+        app:layout_constraintStart_toStartOf="@id/btn_skip"
+        app:layout_constraintTop_toBottomOf="@id/tv_body" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skip"
+        style="@style/AppTextButtonOutlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/sync_skip"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_retry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

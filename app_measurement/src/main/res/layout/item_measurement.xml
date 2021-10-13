@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+    android:layout_marginVertical="@dimen/default_padding"
+    android:background="@drawable/bg_outlined_with_radius4_filled_with_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/default_double_padding">
+
+    <TextView
+        android:id="@+id/source"
+        style="@style/BaseTextAppearance.Paragraph"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/neutral_800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ООО «Василек»" />
+
+    <TextView
+        android:id="@+id/category"
+        style="@style/BaseTextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/boulder"
+        app:layout_constraintEnd_toEndOf="@+id/source"
+        app:layout_constraintStart_toStartOf="@+id/source"
+        app:layout_constraintTop_toBottomOf="@+id/source"
+        tools:text="Административное здание" />
+
+    <TextView
+        android:id="@+id/measurementAvailabilityTitle"
+        style="@style/BaseTextAppearance.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/measurement_item_availability_title"
+        app:layout_constraintEnd_toEndOf="@+id/category"
+        app:layout_constraintStart_toStartOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <TextView
+        android:id="@+id/measurementAvailability"
+        style="@style/BaseTextAppearance.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/measurementAvailabilityTitle"
+        app:layout_constraintStart_toStartOf="@+id/measurementAvailabilityTitle"
+        app:layout_constraintTop_toBottomOf="@+id/measurementAvailabilityTitle"
+        tools:text="Да" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/BaseTextAppearance.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/neutral_800"
+        app:layout_constraintEnd_toStartOf="@+id/center_vertical_guidline"
+        app:layout_constraintStart_toStartOf="@+id/measurementAvailability"
+        app:layout_constraintTop_toBottomOf="@+id/measurementAvailability"
+        tools:text="Академический район, Москва, Дер. зюзино, микрорайон №5, ул. Первомайская 42-24, 105203" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_vertical_guidline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_outlined_with_radius4_primary_color"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/default_padding"
+        android:paddingTop="@dimen/default_padding"
+        android:paddingEnd="@dimen/default_double_padding"
+        android:paddingBottom="@dimen/default_double_padding"
+        app:layout_constraintEnd_toEndOf="@+id/measurementAvailability"
+        app:layout_constraintStart_toStartOf="@+id/center_vertical_guidline"
+        app:layout_constraintTop_toTopOf="@+id/address">
+
+        <TextView
+            android:id="@+id/measurementCreatedDateTitle"
+            style="@style/BaseTextAppearance.Small.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/measurement_item_created_date_title" />
+
+        <TextView
+            android:id="@+id/measurementCreatedDate"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12.03.2020, 17:30" />
+
+        <TextView
+            android:id="@+id/measurementStatusTitle"
+            style="@style/BaseTextAppearance.Small.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/measurement_item_status_title" />
+
+        <TextView
+            android:id="@+id/measurementStatus"
+            style="@style/BaseTextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Запрошена ревизия Запрошена ревизия Запрошена ревизия " />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

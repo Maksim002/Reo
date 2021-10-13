@@ -1,0 +1,1249 @@
+[
+  {
+    "id": "b9731f1a-b52c-45ef-983b-7d1d0613ddb1",
+    "name": "Объект утилизации тестовый",
+    "ownerName": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ХАРТИЯ\"",
+    "ownerInn": "7703770101",
+    "addressDescription": " ул. Пехорская, владение 1А",
+    "latitude": "50",
+    "longitude": "51",
+    "constructionStartDate": 1480539600000,
+    "exploitationStartDate": 1512507600000,
+    "exploitationStartActNumber": "Акт о вводе в эксплуатацию от 22.01.2017",
+    "exploitationPeriod": 13,
+    "exploitationEndDate": 1924894800000,
+    "isInFederalOrRegionalPrograms": true,
+    "programs": "test",
+    "hasSimilarObjectsInSubject": true,
+    "similarObjectsCount": null,
+    "currentAndPlannedSimilarObjects": "test",
+    "risks": "Финансовые риски",
+    "competitiveAdvantages": "Использование инновационных технологий",
+    "flowStatus": {
+      "name": "TECHNICAL_SURVEY_CREATED",
+      "displayName": "Отправлено на техническое обследование"
+    },
+    "verifiedFields": [],
+    "wasteCategoryInfos": [],
+    "verificationStatusInfo": null,
+    "wasteManagementType": {
+      "id": "d2a15470-525d-45eb-acdd-ad2259bc6a4f",
+      "type": {
+        "name": "WASTE_MANAGEMENT_TYPE",
+        "displayName": "Вид обращения с отходами"
+      },
+      "value": "Утилизация ТКО",
+      "indelible": null
+    },
+    "type": {
+      "id": "b988586c-a56c-4622-b7a2-d0f1a62279ca",
+      "type": {
+        "name": "OBJECT_TYPE",
+        "displayName": "Тип объекта"
+      },
+      "value": "Объект утилизации отходов",
+      "indelible": null
+    },
+    "fiasAddress": {
+      "id": "0fd4c21d-1b9c-4d35-8f54-f1de0110f5d5",
+      "regionName": "г Москва",
+      "municipalRegionName": null,
+      "city": "г Москва",
+      "innerCityTerritory": null,
+      "area": null,
+      "planningStructureElement": null,
+      "streetRoadElement": "ул Пехорская",
+      "postalCode": null,
+      "buildingNumber": "1А",
+      "roomNumber": null,
+      "landPlotNumber": null,
+      "oktmo": "45308000",
+      "cadastralNumber": null
+    },
+    "operator": {
+      "name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ХАРТИЯ\"",
+      "inn": "7703770101",
+      "kpp": "771501001",
+      "ogrn": "1127746462250",
+      "ogrnip": null,
+      "legalAddress": " ул. Пехорская, владение 1А",
+      "actualAddress": " ул. Пехорская, владение 1А",
+      "phone": "49544567865",
+      "email": "7703770101@ya.ru",
+      "directorFio": "Игнатьев А.А.",
+      "representativeOfOperatorFio": "Сидоров Ф.Ф.",
+      "representativeOfOperatorPosition": "Главный инженер "
+    },
+    "investment": {
+      "id": "761caf2d-969e-4bf3-aa1e-3e9ca48bc600",
+      "hasInvestor": true,
+      "name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ХАРТИЯ\"",
+      "inn": "7703770101",
+      "kpp": "771501001",
+      "ogrn": "1127746462250",
+      "ogrnip": null,
+      "legalAddress": " ул. Пехорская, владение 1А",
+      "actualAddress": " ул. Пехорская, владение 1А",
+      "phone": "4957537865",
+      "website": "4957537865.ru",
+      "email": "4957537865@ya.ru",
+      "directorFio": "Игнатьев А.А. ",
+      "representatioveFio": "Сидоров Ф.Ф.",
+      "representatiovePosition": "Главный инженер ",
+      "experience": "test",
+      "fullInvestmentAmount": 100000000,
+      "personalInvestmentAmount": 10000000,
+      "plannedPaybackPeriod": 7,
+      "requiredGrossRevenue": 1000000,
+      "hasAgreementOfIntent": null,
+      "agreementRequisites": "test/test/test"
+    },
+    "cost": {
+      "id": "1317e396-0a46-4fb8-b564-b0fb77cf8f6d",
+      "total": 5790000000,
+      "equipment": 5760000,
+      "russianEquipment": 5787677,
+      "installation": 2500000,
+      "russianInstallation": 2500000
+    },
+    "borderLandPlots": [
+      {
+        "id": "e779227c-c578-442e-a1af-a966633e4cd5",
+        "hasLandPlotForProjectRealization": true,
+        "compliancePeriod": 1481144400000,
+        "hasUrbanDevelopmentPlan": false,
+        "hasSanityProtectionZone": true,
+        "sanitaryProtectionZoneSize": 15,
+        "egrp": {
+          "id": "df52e02b-4ad7-4ec0-af5f-420335d1880c",
+          "fileName": "PDF Document.pdf",
+          "fileType": "application/pdf",
+          "fileDownloadUri": "http://185.104.106.187:8080/api/file/df52e02b-4ad7-4ec0-af5f-420335d1880c",
+          "size": 3773,
+          "longitude": null,
+          "latitude": null,
+          "created": 1608916685504
+        },
+        "rightsGivingDocumentName": "test/test",
+        "rightsGivingDocumentStartDate": 1512507600000,
+        "rigthsGivingDocumentNumber": "23",
+        "landPotArea": 12456,
+        "suitableForExonomicActivitiesLandPloArea": 12345,
+        "hasPowerSupply": false,
+        "dedicatedElecricalPower": null,
+        "powerSupplyConnectionDate": 1608757200000,
+        "hasWaterSupply": false,
+        "waterSupplyPower": null,
+        "watterSupplyConnectionDate": 1608152400000,
+        "hasGasSupply": true,
+        "gasSupplyPower": 15,
+        "gasSupplyConnectionDate": null,
+        "hasHeatPipelinesConnection": false,
+        "heatPipelinesConnectionStartDate": 1607115600000,
+        "hasAutomobileAccessRoads": false,
+        "automobileAccessRoadsConnectionDate": 1609362000000,
+        "hasRailway": true,
+        "distanceToNearestRailway": 5,
+        "distanceToNearestTransshipment": 5,
+        "distanceToNearestAirport": 15,
+        "nearestSettlementName": "Москва",
+        "distanceToNearestSettlement": 25,
+        "address": " ул. Пехорская, владение 1А",
+        "area": 345,
+        "cadastralNumber": "77:03:0010010:3114",
+        "buildingCadastralNumber": "77:03:0010010:3114",
+        "ownershipType": {
+          "id": "529a7ad0-34bb-40e9-973e-45970b592bea",
+          "type": {
+            "name": "OWNERSHIP_TYPE",
+            "displayName": "Вид собственности на земельный участок"
+          },
+          "value": "Государственная собственность не разграничена",
+          "indelible": null
+        },
+        "landCategory": {
+          "id": "197fbaeb-b667-4c1d-99bc-6a68eb0fe0d7",
+          "type": {
+            "name": "LAND_CATEGORY",
+            "displayName": "Категории земель"
+          },
+          "value": "Категория не установлена",
+          "indelible": null
+        },
+        "allowedUsingType": {
+          "id": "f19820be-7f4d-472a-94b9-63f8555ef46c",
+          "type": {
+            "name": "ALLOWED_USING_TYPE",
+            "displayName": "Разрешенное использование земельного участка"
+          },
+          "value": "Специальная деятельность",
+          "indelible": null
+        },
+        "automobileRoadType": null
+      }
+    ],
+    "currentLandPlots": [
+      {
+        "id": "021bd246-95c4-48b1-874d-20079edafc4f",
+        "zoneNumber": "2",
+        "averageInnacuracy": 2,
+        "cadastralNumber": "77:03:0010010:3114",
+        "points": [
+          {
+            "id": "bbe66724-3804-476b-a413-2620eb737646",
+            "number": "1",
+            "x": "55",
+            "y": "56",
+            "description": {
+              "id": "75d38311-c8e9-479d-b294-73fc79e1d263",
+              "type": {
+                "name": "DOT_DESCRIPTION",
+                "displayName": "«Описание закрепления точки на местности» (Способы закрепления точек границы на местности)"
+              },
+              "value": "Закрепление отсутствует",
+              "indelible": null
+            }
+          },
+          {
+            "id": "3e4cd291-023c-4879-821a-f2e7a9852b18",
+            "number": "2",
+            "x": "56",
+            "y": "57",
+            "description": {
+              "id": "75d38311-c8e9-479d-b294-73fc79e1d263",
+              "type": {
+                "name": "DOT_DESCRIPTION",
+                "displayName": "«Описание закрепления точки на местности» (Способы закрепления точек границы на местности)"
+              },
+              "value": "Закрепление отсутствует",
+              "indelible": null
+            }
+          },
+          {
+            "id": "adb9a9ec-3d7b-4f47-a263-7144684c61c9",
+            "number": "3",
+            "x": "58",
+            "y": "58",
+            "description": {
+              "id": "75d38311-c8e9-479d-b294-73fc79e1d263",
+              "type": {
+                "name": "DOT_DESCRIPTION",
+                "displayName": "«Описание закрепления точки на местности» (Способы закрепления точек границы на местности)"
+              },
+              "value": "Закрепление отсутствует",
+              "indelible": null
+            }
+          }
+        ],
+        "scheme": null,
+        "coordinatesSystem": {
+          "id": "8d6868ee-2d30-47cb-902f-f5700a020a36",
+          "type": {
+            "name": "COORDINATE_SYSTEM",
+            "displayName": "Системы координат"
+          },
+          "value": "МСК-50 Москва и Московская область",
+          "indelible": null
+        },
+        "description": null
+      }
+    ],
+    "acceptanceDocumentation": {
+      "id": "c48cef2c-b87a-4f8a-9f26-3bd56b69eb9d",
+      "hasFinancialJustification": false,
+      "financialJustification": null,
+      "noJustificationReason": "test",
+      "justificationCompletedDate": null,
+      "hasFinModel": false,
+      "noFinModelReason": "test",
+      "finModel": null,
+      "finModelCompletedDate": null,
+      "hasTechnicalSpecification": false,
+      "technicalSpecification": null,
+      "technicalSpecificationCompletedDate": null,
+      "noTechnicalSpecificationReason": "test",
+      "hasProjectDocumentation": false,
+      "projectDocumentation": null,
+      "noProjectDocumentationReason": "test",
+      "projectDocumentationCompletedDate": null,
+      "hasProjectOrganization": null,
+      "projectOrganizationName": null,
+      "projectOrganizationInn": null,
+      "hasEnvironmentalImpactResearch": false,
+      "environmentalImpactResearchResults": null,
+      "noResearchReason": "test",
+      "researchCompletedDate": null,
+      "hasConclusion": null,
+      "conclusion": null,
+      "noConclusionReason": null,
+      "publicHearingsCompleted": false,
+      "publicHearingsResults": null,
+      "noPublicHearingsReason": "test",
+      "hasGovernmentConclusion": false,
+      "governmentConclusion": null,
+      "noGovernmentConclusionReason": "test",
+      "governmentConclusionIssuer": null,
+      "governmentConclusionNumber": null,
+      "governmentConclusionDate": null,
+      "hasGovernmentEnvironmentalConclusion": false,
+      "governmentEnvironmentalConclusion": null,
+      "noGovernmentEnvironmentalConclusionReason": "test",
+      "governmentEnvironmentalExpertisesDate": null,
+      "hasStateRegistration": false,
+      "stateRegistrationNumber": null,
+      "stateRegistrationDate": null,
+      "stateRegistration": null,
+      "hasIntegratedEnvironmentalPermission": false,
+      "integratedEnvironmentalPermission": null,
+      "noIntegratedEnvironmentalPermissionReason": "test",
+      "integratedEnvironmentalPermissionDate": null,
+      "hasInvestmentProgram": false,
+      "investmentProgram": null,
+      "noInvestmentProgramReason": "test",
+      "investmentProgramDate": null,
+      "hasEnvironmentControlProgram": false,
+      "environmentControlProgram": null,
+      "noEnvironmentControlProgramReason": "test",
+      "environmentControlProgramDate": null,
+      "hasSanPinConclusion": false,
+      "sanPinConclusion": null,
+      "noSanPinConclusionReason": "test",
+      "sanPinConclusionDate": null,
+      "hasLicence": false,
+      "licenceStartDate": null,
+      "licenceNumber": null,
+      "licenceAuthor": null,
+      "noLicenceReason": null,
+      "licenceWillBeGivenDate": null,
+      "isInRegistry": false,
+      "groro": null,
+      "groroRequestRequisites": null,
+      "noGroroReason": "test",
+      "includeInGroroDate": null,
+      "isInTerritorialScheme": true,
+      "territorialSchemeDocumentRequisites": "34",
+      "territorialSchemeLink": "34.1",
+      "hasSpecialInvestigations": true,
+      "specialInvestigator": "Мосинжпроект",
+      "specialInvestigationsDate": 1576011600000,
+      "isOnBorder": true,
+      "samplesResults": {
+        "id": "80811c48-ee86-4005-b19f-21f8ac1ca5b2",
+        "fileName": "PDF Document.pdf",
+        "fileType": "application/pdf",
+        "fileDownloadUri": "http://185.104.106.187:8080/api/file/80811c48-ee86-4005-b19f-21f8ac1ca5b2",
+        "size": 3773,
+        "longitude": null,
+        "latitude": null,
+        "created": 1608916933694
+      },
+      "objectCategory": {
+        "id": "78523987-f285-4cf1-9fae-564e6875d144",
+        "type": {
+          "name": "NEGATIVE_OBJECT_CATEGORY",
+          "displayName": "Категории объектов, оказывающих негативное воздействие на окружающую среду"
+        },
+        "value": "Объекты IV категории - объекты, оказывающие минимальное негативное воздействие на окружающую среду",
+        "indelible": null
+      },
+      "dangerType": {
+        "id": "49954f0b-ee23-4e19-af79-60daa8fa8f5a",
+        "type": {
+          "name": "DANGER_TYPE",
+          "displayName": "Классификация опасных производственных объектов"
+        },
+        "value": "IV класс опасности",
+        "indelible": null
+      }
+    },
+    "workSchedule": {
+      "id": "97ef1a0b-8ce5-4257-907f-6f382d641cfb",
+      "schedule": "9.00-17.00, обед с 14.00-15.00",
+      "shiftsPerDayCount": 3,
+      "daysPerYearCount": 300,
+      "workplacesCount": 54,
+      "managersCount": 12,
+      "workersCount": 42
+    },
+    "tariff": {
+      "id": "cd746f8f-d9f9-4b75-87a9-b898461d7ff3",
+      "averageYearWasteReceiving": 25000,
+      "burial": 25000,
+      "maxTariffPerTon": 25000,
+      "maxTariffPerMeter": 0,
+      "operatorTariffStartDate": 1546290000000,
+      "operatorTariffEndDate": 1609362000000
+    },
+    "indicator": {
+      "id": "828a7907-31ea-4180-ac4d-07e19f5cf92b",
+      "projectCapacity": 100000,
+      "productionCapacity": 50000,
+      "freeCapacity": 50000,
+      "previousYearTkoWeight": 25000,
+      "previousYearNonTkoWeight": 10000,
+      "fullPojectCapacity": null,
+      "nextYearFreeCapacity": null,
+      "secondaryRawMaterialsPerYear": 1500,
+      "utilizationPercent": 40,
+      "area": 545454,
+      "photos": [
+        {
+          "id": "68d4684a-1489-4de5-af73-20b307d31143",
+          "fileName": "Screenshot_3.jpg",
+          "fileType": "image/jpeg",
+          "fileDownloadUri": "http://185.104.106.187:8080/api/file/68d4684a-1489-4de5-af73-20b307d31143",
+          "size": 85250,
+          "longitude": null,
+          "latitude": null,
+          "created": 1608917091638
+        }
+      ],
+      "productionPartArea": 458,
+      "productionPartPhotos": [
+        {
+          "id": "0c9e68ba-fc70-4b30-a5d4-e8ee9a8b151e",
+          "fileName": "Screenshot_3.jpg",
+          "fileType": "image/jpeg",
+          "fileDownloadUri": "http://185.104.106.187:8080/api/file/0c9e68ba-fc70-4b30-a5d4-e8ee9a8b151e",
+          "size": 85250,
+          "longitude": null,
+          "latitude": null,
+          "created": 1608917102297
+        }
+      ],
+      "unloadingZoneArea": 200,
+      "sortingZoneArea": 300,
+      "hasCompostingZone": true,
+      "compostingZoneCapacityPerYear": 300,
+      "compostingMaterialName": "test",
+      "noCompostingZoneReason": null,
+      "compostPurpose": "test",
+      "hasRdfZone": true,
+      "rdfZoneCapacityPerYear": 100,
+      "rdfPurpose": "test",
+      "noRdfZoneReason": null,
+      "technologicalScheme": {
+        "id": "8173fa4c-e72a-4fa1-aad1-1db3f05e2e4b",
+        "fileName": "PDF Document.pdf",
+        "fileType": "application/pdf",
+        "fileDownloadUri": "http://185.104.106.187:8080/api/file/8173fa4c-e72a-4fa1-aad1-1db3f05e2e4b",
+        "size": 3773,
+        "longitude": null,
+        "latitude": null,
+        "created": 1608917173267
+      },
+      "technologicalSchemePhotos": [
+        {
+          "id": "27e2e632-0974-47cc-b1b0-a95e92b993f4",
+          "fileName": "Screenshot_3.jpg",
+          "fileType": "image/jpeg",
+          "fileDownloadUri": "http://185.104.106.187:8080/api/file/27e2e632-0974-47cc-b1b0-a95e92b993f4",
+          "size": 85250,
+          "longitude": null,
+          "latitude": null,
+          "created": 1608917159722
+        }
+      ],
+      "generalScheme": {
+        "id": "0b2e2537-5b53-4fd9-8aaf-af1e50cff41a",
+        "fileName": "PDF Document.pdf",
+        "fileType": "application/pdf",
+        "fileDownloadUri": "http://185.104.106.187:8080/api/file/0b2e2537-5b53-4fd9-8aaf-af1e50cff41a",
+        "size": 3773,
+        "longitude": null,
+        "latitude": null,
+        "created": 1608917208615
+      },
+      "generalSchemePhotos": [
+        {
+          "id": "78e06470-c2f8-4230-afc4-e81043a82dde",
+          "fileName": "Screenshot_3.jpg",
+          "fileType": "image/jpeg",
+          "fileDownloadUri": "http://185.104.106.187:8080/api/file/78e06470-c2f8-4230-afc4-e81043a82dde",
+          "size": 85250,
+          "longitude": null,
+          "latitude": null,
+          "created": 1608917199938
+        }
+      ],
+      "productionZoneScheme": {
+        "id": "d252493c-d356-4ea8-aa8f-d3594ca4b4d1",
+        "fileName": "PDF Document.pdf",
+        "fileType": "application/pdf",
+        "fileDownloadUri": "http://185.104.106.187:8080/api/file/d252493c-d356-4ea8-aa8f-d3594ca4b4d1",
+        "size": 3773,
+        "longitude": null,
+        "latitude": null,
+        "created": 1608917192463
+      },
+      "productionZoneSchemePhotos": [
+        {
+          "id": "39993ad7-4a9e-4b07-8f03-447c65be1ae9",
+          "fileName": "Screenshot_3.jpg",
+          "fileType": "image/jpeg",
+          "fileDownloadUri": "http://185.104.106.187:8080/api/file/39993ad7-4a9e-4b07-8f03-447c65be1ae9",
+          "size": 85250,
+          "longitude": null,
+          "latitude": null,
+          "created": 1608917183414
+        }
+      ],
+      "isImportSubstitutionNeeded": true,
+      "equipmentType": "test",
+      "isNdtEquipmentUsed": true,
+      "ndtEquipmentType": "Реверсивный конвейер",
+      "ndtDictionaryName": "ИТС 38-2017 «Сжигание топлива на крупных установках в целях производства энергии»"
+    },
+    "wasteTypes": [
+      {
+        "id": "340215fd-b857-489b-9722-592afd2b22ab",
+        "wasteCount": 50000,
+        "wastePrecentage": 35,
+        "wasteDirection": "test",
+        "wasteType": {
+          "id": "5f2e1d63-8881-43c8-8a71-158729918ea5",
+          "type": {
+            "name": "WASTE_TYPE",
+            "displayName": "Вид отходов"
+          },
+          "value": "7 31 931 11 72 4 отходы при ликвидации свалок твердых коммунальных отходов",
+          "indelible": null
+        },
+        "dangerType": {
+          "id": "49954f0b-ee23-4e19-af79-60daa8fa8f5a",
+          "type": {
+            "name": "DANGER_TYPE",
+            "displayName": "Классификация опасных производственных объектов"
+          },
+          "value": "IV класс опасности",
+          "indelible": null
+        }
+      }
+    ],
+    "infrastructureObjectInfo": {
+      "id": "1aba8e0c-e94a-4a29-a15e-d2e4e87b4003",
+      "hasWeightControl": false,
+      "noWeightControlReason": null,
+      "weightControls": [],
+      "hasWheelsWashingPoint": false,
+      "noWheelsWashingPointReason": null,
+      "wheelsWashingPoints": [],
+      "hasVideoEquipment": false,
+      "noVideoEquipmentReason": null,
+      "videoEquipment": {
+        "id": "8f2dac10-189e-47bf-a125-b5f6e2b7dd40",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasLocalTreatmentFacilities": false,
+      "noLocalTreatmentFacilitiesReason": null,
+      "localTreatmentFacilities": [],
+      "hasRadiationControl": false,
+      "radiationControlEquipmentCount": null,
+      "noRadiationControlReason": null,
+      "radiationControls": [],
+      "hasRoads": false,
+      "noRoadsReason": null,
+      "road": {
+        "id": "844bc7cf-3652-45f1-999c-15393453beec",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasFences": false,
+      "noFencesReason": null,
+      "fence": {
+        "id": "0ae545f5-9e87-40e6-a208-1a32ab4bebf3",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasLights": false,
+      "noLightsReason": null,
+      "light": {
+        "id": "3489977c-e542-41a8-a840-6b18b4084de5",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasSecurity": false,
+      "noSecurityReason": null,
+      "security": {
+        "id": "9437e023-5571-4fc0-bc69-19958bd3387b",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasAsu": false,
+      "noAsuReason": null,
+      "asu": {
+        "id": "f1fb2e40-8999-4420-a889-d0754c3a5904",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      }
+    },
+    "equipment": [],
+    "secondaryResources": null,
+    "roInfo": {
+      "id": "f0715f57-33a7-4644-81e3-17d025ff9558",
+      "roId": "c819592c-d3cf-4463-b9d6-7417fb206979",
+      "name": "ООО \"Хартия\"",
+      "inn": "7703770101",
+      "zoneName": "Вся территория"
+    },
+    "technicalSurvey": null,
+    "dataSource": {
+      "id": "58dcf4ed-4586-4907-81e1-0dc661a59324",
+      "name": "ООО «Хартия»",
+      "uploadDate": 1607547600000,
+      "representativeFio": "Игнатьев А.А.",
+      "representativePosition": "Главный инженер ",
+      "subjectName": {
+        "id": "2e9f86a0-3503-47e5-9d3d-4bd017e2585f",
+        "type": {
+          "name": "REGION",
+          "displayName": "Субъекты РФ"
+        },
+        "value": "Москва г",
+        "indelible": null
+      }
+    },
+    "productsInfo": {
+      "id": "8a878db9-a38d-4de2-825e-80280b1d2e30",
+      "totalCountPerYear": 0,
+      "products": [],
+      "providedServices": []
+    },
+    "status": {
+      "id": "08ebe7d6-92d4-4fc8-a5e7-842df357d6bc",
+      "type": {
+        "name": "OBJECT_STATUS",
+        "displayName": "Название"
+      },
+      "value": "Действующий",
+      "indelible": null
+    },
+    "federalDistrictName": {
+      "id": "389ab3a9-4008-4fea-905b-44f268a2cb71",
+      "type": {
+        "name": "FEDERAL_DISTRICT",
+        "displayName": "Федеральный округ"
+      },
+      "value": "Центральный федеральный округ",
+      "indelible": null
+    },
+    "subjectName": {
+      "id": "2e9f86a0-3503-47e5-9d3d-4bd017e2585f",
+      "type": {
+        "name": "REGION",
+        "displayName": "Субъекты РФ"
+      },
+      "value": "Москва г",
+      "indelible": null
+    },
+    "subjectAreaName": {
+      "id": "7f87ede5-e015-4f2e-b611-73561de0f4dd",
+      "type": {
+        "name": "SUBJECT_AREA",
+        "displayName": "Наименование района субъекта Российской Федерации, на территории которого расположен объект"
+      },
+      "value": "Городское поселение Московский тер",
+      "indelible": null
+    },
+    "category": null,
+    "verified": false
+  },
+  {
+    "id": "29d4bd8f-aa9b-406c-a48e-77ddee485c7d",
+    "name": "Тест2",
+    "ownerName": "тест",
+    "ownerInn": "1234568999",
+    "addressDescription": "Орел",
+    "latitude": "5.78877",
+    "longitude": "4.34565",
+    "constructionStartDate": 1606770000000,
+    "exploitationStartDate": 1606856400000,
+    "exploitationStartActNumber": "тест",
+    "exploitationPeriod": 2,
+    "exploitationEndDate": 1606942800000,
+    "isInFederalOrRegionalPrograms": false,
+    "programs": null,
+    "hasSimilarObjectsInSubject": false,
+    "similarObjectsCount": null,
+    "currentAndPlannedSimilarObjects": null,
+    "risks": null,
+    "competitiveAdvantages": null,
+    "flowStatus": {
+      "name": "TECHNICAL_SURVEY_CREATED",
+      "displayName": "Отправлено на техническое обследование"
+    },
+    "verifiedFields": [
+      "name",
+      "dataSource.uploadDate",
+      "id",
+      "type"
+    ],
+    "wasteCategoryInfos": [],
+    "verificationStatusInfo": null,
+    "wasteManagementType": {
+      "id": "d2a15470-525d-45eb-acdd-ad2259bc6a4f",
+      "type": {
+        "name": "WASTE_MANAGEMENT_TYPE",
+        "displayName": "Вид обращения с отходами"
+      },
+      "value": "Утилизация ТКО",
+      "indelible": null
+    },
+    "type": {
+      "id": "b988586c-a56c-4622-b7a2-d0f1a62279ca",
+      "type": {
+        "name": "OBJECT_TYPE",
+        "displayName": "Тип объекта"
+      },
+      "value": "Объект утилизации отходов",
+      "indelible": null
+    },
+    "fiasAddress": {
+      "id": "2abed4d9-5565-4885-bc96-f4ffccc6cba4",
+      "regionName": "Орловская обл",
+      "municipalRegionName": null,
+      "city": "г Орёл",
+      "innerCityTerritory": null,
+      "area": null,
+      "planningStructureElement": null,
+      "streetRoadElement": null,
+      "postalCode": null,
+      "buildingNumber": null,
+      "roomNumber": null,
+      "landPlotNumber": null,
+      "oktmo": "54701000001",
+      "cadastralNumber": null
+    },
+    "operator": {
+      "name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЧИСТЫЙ ГОРОД\"",
+      "inn": "1660124195",
+      "kpp": "165501001",
+      "ogrn": "1091690008915",
+      "ogrnip": null,
+      "legalAddress": "тест",
+      "actualAddress": "тест",
+      "phone": "887766",
+      "email": "тест",
+      "directorFio": "тест",
+      "representativeOfOperatorFio": "тест",
+      "representativeOfOperatorPosition": "тест"
+    },
+    "investment": {
+      "id": "51d4e304-8e85-44cc-b2eb-063b2e9c3507",
+      "hasInvestor": false,
+      "name": null,
+      "inn": null,
+      "kpp": null,
+      "ogrn": null,
+      "ogrnip": null,
+      "legalAddress": null,
+      "actualAddress": null,
+      "phone": null,
+      "website": null,
+      "email": null,
+      "directorFio": null,
+      "representatioveFio": null,
+      "representatiovePosition": null,
+      "experience": null,
+      "fullInvestmentAmount": null,
+      "personalInvestmentAmount": null,
+      "plannedPaybackPeriod": null,
+      "requiredGrossRevenue": null,
+      "hasAgreementOfIntent": null,
+      "agreementRequisites": null
+    },
+    "cost": {
+      "id": "aa1c17ef-6d0a-4fc7-a92a-1d880f200dd0",
+      "total": 100,
+      "equipment": 100,
+      "russianEquipment": null,
+      "installation": 100,
+      "russianInstallation": null
+    },
+    "borderLandPlots": [
+      {
+        "id": "bb150737-2335-4f4f-a7b8-ee7598af98e8",
+        "hasLandPlotForProjectRealization": false,
+        "compliancePeriod": null,
+        "hasUrbanDevelopmentPlan": false,
+        "hasSanityProtectionZone": false,
+        "sanitaryProtectionZoneSize": null,
+        "egrp": null,
+        "rightsGivingDocumentName": null,
+        "rightsGivingDocumentStartDate": null,
+        "rigthsGivingDocumentNumber": null,
+        "landPotArea": null,
+        "suitableForExonomicActivitiesLandPloArea": null,
+        "hasPowerSupply": null,
+        "dedicatedElecricalPower": null,
+        "powerSupplyConnectionDate": null,
+        "hasWaterSupply": null,
+        "waterSupplyPower": null,
+        "watterSupplyConnectionDate": null,
+        "hasGasSupply": null,
+        "gasSupplyPower": null,
+        "gasSupplyConnectionDate": null,
+        "hasHeatPipelinesConnection": null,
+        "heatPipelinesConnectionStartDate": null,
+        "hasAutomobileAccessRoads": null,
+        "automobileAccessRoadsConnectionDate": null,
+        "hasRailway": null,
+        "distanceToNearestRailway": null,
+        "distanceToNearestTransshipment": null,
+        "distanceToNearestAirport": null,
+        "nearestSettlementName": null,
+        "distanceToNearestSettlement": null,
+        "address": null,
+        "area": null,
+        "cadastralNumber": null,
+        "buildingCadastralNumber": null,
+        "ownershipType": null,
+        "landCategory": null,
+        "allowedUsingType": null,
+        "automobileRoadType": null
+      }
+    ],
+    "currentLandPlots": [],
+    "acceptanceDocumentation": {
+      "id": "b4ded174-51b9-439f-ba32-fd38c92db6ac",
+      "hasFinancialJustification": false,
+      "financialJustification": null,
+      "noJustificationReason": null,
+      "justificationCompletedDate": null,
+      "hasFinModel": false,
+      "noFinModelReason": null,
+      "finModel": null,
+      "finModelCompletedDate": null,
+      "hasTechnicalSpecification": false,
+      "technicalSpecification": null,
+      "technicalSpecificationCompletedDate": null,
+      "noTechnicalSpecificationReason": null,
+      "hasProjectDocumentation": false,
+      "projectDocumentation": null,
+      "noProjectDocumentationReason": null,
+      "projectDocumentationCompletedDate": null,
+      "hasProjectOrganization": null,
+      "projectOrganizationName": null,
+      "projectOrganizationInn": null,
+      "hasEnvironmentalImpactResearch": false,
+      "environmentalImpactResearchResults": null,
+      "noResearchReason": null,
+      "researchCompletedDate": null,
+      "hasConclusion": null,
+      "conclusion": null,
+      "noConclusionReason": null,
+      "publicHearingsCompleted": false,
+      "publicHearingsResults": null,
+      "noPublicHearingsReason": null,
+      "hasGovernmentConclusion": false,
+      "governmentConclusion": null,
+      "noGovernmentConclusionReason": null,
+      "governmentConclusionIssuer": null,
+      "governmentConclusionNumber": null,
+      "governmentConclusionDate": null,
+      "hasGovernmentEnvironmentalConclusion": false,
+      "governmentEnvironmentalConclusion": null,
+      "noGovernmentEnvironmentalConclusionReason": null,
+      "governmentEnvironmentalExpertisesDate": null,
+      "hasStateRegistration": false,
+      "stateRegistrationNumber": null,
+      "stateRegistrationDate": null,
+      "stateRegistration": null,
+      "hasIntegratedEnvironmentalPermission": false,
+      "integratedEnvironmentalPermission": null,
+      "noIntegratedEnvironmentalPermissionReason": null,
+      "integratedEnvironmentalPermissionDate": null,
+      "hasInvestmentProgram": false,
+      "investmentProgram": null,
+      "noInvestmentProgramReason": null,
+      "investmentProgramDate": null,
+      "hasEnvironmentControlProgram": false,
+      "environmentControlProgram": null,
+      "noEnvironmentControlProgramReason": null,
+      "environmentControlProgramDate": null,
+      "hasSanPinConclusion": false,
+      "sanPinConclusion": null,
+      "noSanPinConclusionReason": null,
+      "sanPinConclusionDate": null,
+      "hasLicence": false,
+      "licenceStartDate": null,
+      "licenceNumber": null,
+      "licenceAuthor": null,
+      "noLicenceReason": null,
+      "licenceWillBeGivenDate": null,
+      "isInRegistry": false,
+      "groro": null,
+      "groroRequestRequisites": null,
+      "noGroroReason": null,
+      "includeInGroroDate": null,
+      "isInTerritorialScheme": false,
+      "territorialSchemeDocumentRequisites": null,
+      "territorialSchemeLink": null,
+      "hasSpecialInvestigations": false,
+      "specialInvestigator": null,
+      "specialInvestigationsDate": null,
+      "isOnBorder": false,
+      "samplesResults": null,
+      "objectCategory": {
+        "id": "2f5a7e47-3411-4ed8-9c36-c31776f1356e",
+        "type": {
+          "name": "NEGATIVE_OBJECT_CATEGORY",
+          "displayName": "Категории объектов, оказывающих негативное воздействие на окружающую среду"
+        },
+        "value": "Объекты I категории - объекты, оказывающие значительное негативное воздействие на окружающую среду и относящиеся к областям применения наилучших доступных технологий",
+        "indelible": null
+      },
+      "dangerType": null
+    },
+    "workSchedule": {
+      "id": "867f2ff5-90cb-467b-ae96-34469787d596",
+      "schedule": "тест",
+      "shiftsPerDayCount": 2,
+      "daysPerYearCount": 2,
+      "workplacesCount": 22,
+      "managersCount": 2,
+      "workersCount": 2
+    },
+    "tariff": {
+      "id": "cd2412b1-05a3-490a-bb9c-d43f90db9a73",
+      "averageYearWasteReceiving": 2,
+      "burial": 2,
+      "maxTariffPerTon": 2,
+      "maxTariffPerMeter": 0,
+      "operatorTariffStartDate": 1606770000000,
+      "operatorTariffEndDate": 1607547600000
+    },
+    "indicator": {
+      "id": "eca57692-4010-4614-bee3-83369e2694d5",
+      "projectCapacity": 2,
+      "productionCapacity": 2,
+      "freeCapacity": 2,
+      "previousYearTkoWeight": 2,
+      "previousYearNonTkoWeight": 2,
+      "fullPojectCapacity": null,
+      "nextYearFreeCapacity": null,
+      "secondaryRawMaterialsPerYear": 2,
+      "utilizationPercent": 2,
+      "area": null,
+      "photos": [],
+      "productionPartArea": null,
+      "productionPartPhotos": [],
+      "unloadingZoneArea": null,
+      "sortingZoneArea": null,
+      "hasCompostingZone": false,
+      "compostingZoneCapacityPerYear": null,
+      "compostingMaterialName": null,
+      "noCompostingZoneReason": null,
+      "compostPurpose": null,
+      "hasRdfZone": false,
+      "rdfZoneCapacityPerYear": null,
+      "rdfPurpose": null,
+      "noRdfZoneReason": null,
+      "technologicalScheme": null,
+      "technologicalSchemePhotos": [],
+      "generalScheme": null,
+      "generalSchemePhotos": [],
+      "productionZoneScheme": null,
+      "productionZoneSchemePhotos": [],
+      "isImportSubstitutionNeeded": false,
+      "equipmentType": null,
+      "isNdtEquipmentUsed": false,
+      "ndtEquipmentType": null,
+      "ndtDictionaryName": null
+    },
+    "wasteTypes": [
+      {
+        "id": "6b5656a4-fca4-4156-91d2-dc9a5c779be2",
+        "wasteCount": 2,
+        "wastePrecentage": 2,
+        "wasteDirection": "2",
+        "wasteType": {
+          "id": "8bd8caa6-cc33-4643-80be-8fc6d4e1c391",
+          "type": {
+            "name": "WASTE_TYPE",
+            "displayName": "Вид отходов"
+          },
+          "value": "7 31 000 00 00 0 Отходы коммунальные твердые",
+          "indelible": null
+        },
+        "dangerType": {
+          "id": "c861a4b3-bbda-4ec9-a036-c6c73916138b",
+          "type": {
+            "name": "DANGER_TYPE",
+            "displayName": "Классификация опасных производственных объектов"
+          },
+          "value": "I класс опасности",
+          "indelible": null
+        }
+      }
+    ],
+    "infrastructureObjectInfo": {
+      "id": "8612ea1e-9e1f-4d65-86ec-e516a376c346",
+      "hasWeightControl": false,
+      "noWeightControlReason": null,
+      "weightControls": [],
+      "hasWheelsWashingPoint": false,
+      "noWheelsWashingPointReason": null,
+      "wheelsWashingPoints": [],
+      "hasVideoEquipment": false,
+      "noVideoEquipmentReason": null,
+      "videoEquipment": {
+        "id": "b2869d1a-b4a4-4d5b-9d8b-7fb35b7e0233",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasLocalTreatmentFacilities": false,
+      "noLocalTreatmentFacilitiesReason": null,
+      "localTreatmentFacilities": [],
+      "hasRadiationControl": false,
+      "radiationControlEquipmentCount": null,
+      "noRadiationControlReason": null,
+      "radiationControls": [],
+      "hasRoads": false,
+      "noRoadsReason": null,
+      "road": {
+        "id": "feeaa5d7-ad6e-42b1-a519-5604c4480061",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasFences": false,
+      "noFencesReason": null,
+      "fence": {
+        "id": "48da530e-8672-4179-ba47-64b7ec441180",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasLights": false,
+      "noLightsReason": null,
+      "light": {
+        "id": "5386cd39-d636-4657-87ca-4f7c45ebd86e",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasSecurity": false,
+      "noSecurityReason": null,
+      "security": {
+        "id": "395459a1-dfbc-4104-a6dd-3db433fb5b68",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      },
+      "hasAsu": false,
+      "noAsuReason": null,
+      "asu": {
+        "id": "22a7df4e-b264-47f2-a74d-4e8bbd347aeb",
+        "count": null,
+        "brand": null,
+        "manufacturer": null,
+        "length": null,
+        "photos": [],
+        "type": null,
+        "capacity": null,
+        "passport": null,
+        "passportPhotos": [],
+        "scheme": null,
+        "schemePhotos": [],
+        "purpose": null,
+        "functions": null
+      }
+    },
+    "equipment": [],
+    "secondaryResources": null,
+    "roInfo": {
+      "id": "57bcfd68-e0c1-4b15-99b8-92bda31f1f52",
+      "roId": null,
+      "name": "тест",
+      "inn": "1654002858",
+      "zoneName": "тест"
+    },
+    "technicalSurvey": null,
+    "dataSource": {
+      "id": "29881ec2-83ef-41a8-bbee-8eacaac40cec",
+      "name": "Тест",
+      "uploadDate": 1608843600000,
+      "representativeFio": "тест",
+      "representativePosition": "тест",
+      "subjectName": {
+        "id": "390dc9d5-5ddf-41f0-8581-223c21eb2af2",
+        "type": {
+          "name": "REGION",
+          "displayName": "Субъекты РФ"
+        },
+        "value": "Бурятия Респ",
+        "indelible": null
+      }
+    },
+    "productsInfo": {
+      "id": "4743ebd0-11fc-4f16-a694-e061f354fc48",
+      "totalCountPerYear": 2,
+      "products": [
+        {
+          "id": "869c2a45-9e5e-46e8-bc60-f035267a7a2b",
+          "name": "2",
+          "volume": 2,
+          "photos": []
+        }
+      ],
+      "providedServices": []
+    },
+    "status": {
+      "id": "08ebe7d6-92d4-4fc8-a5e7-842df357d6bc",
+      "type": {
+        "name": "OBJECT_STATUS",
+        "displayName": "Название"
+      },
+      "value": "Действующий",
+      "indelible": null
+    },
+    "federalDistrictName": {
+      "id": "389ab3a9-4008-4fea-905b-44f268a2cb71",
+      "type": {
+        "name": "FEDERAL_DISTRICT",
+        "displayName": "Федеральный округ"
+      },
+      "value": "Центральный федеральный округ",
+      "indelible": null
+    },
+    "subjectName": {
+      "id": "5b466476-242c-4891-b982-a06c6f5f095c",
+      "type": {
+        "name": "REGION",
+        "displayName": "Субъекты РФ"
+      },
+      "value": "Орловская обл",
+      "indelible": null
+    },
+    "subjectAreaName": {
+      "id": "bc192e3f-e05e-4b12-828f-4aabe220f2da",
+      "type": {
+        "name": "SUBJECT_AREA",
+        "displayName": "Наименование района субъекта Российской Федерации, на территории которого расположен объект"
+      },
+      "value": "Кромской р-н",
+      "indelible": null
+    },
+    "category": null,
+    "verified": false
+  }
+]

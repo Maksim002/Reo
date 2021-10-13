@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titleTextView"
+    style="@style/BaseTextAppearance.Small.Bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_sides"
+    android:paddingHorizontal="@dimen/default_double_padding"
+    android:paddingVertical="@dimen/default_padding"
+    android:textColor="@color/neutral_800"
+    tools:text="Бункер контейнер 8 м3 для мусора и твердых бытовых отходов" />

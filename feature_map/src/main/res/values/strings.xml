@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_my_location">Не удалось загрузить текущую позицию</string>
+    <string name="geo_data_request_dialog_message_my_location">Геоданные нужны для определения вашей геопозиции</string>
+    <string name="geo_data_request_dialog_message_route">Геоданные нужны для построения маршрута</string>
+    <string name="geo_data_request_reject_toast_my_location">Получение вашей локации без геопозиции невозможно</string>
+    <string name="geo_data_request_reject_toast_route">Построение маршрута без геопозиции невозможно</string>
+</resources>

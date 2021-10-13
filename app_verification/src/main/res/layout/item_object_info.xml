@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorSurface"
+    android:paddingHorizontal="@dimen/default_side_padding"
+    android:paddingBottom="@dimen/default_double_padding">
+
+    <TextView
+        android:id="@+id/sourceName"
+        style="@style/BaseTextAppearance.ParagraphLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_double_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ООО «Василек»" />
+
+    <TextView
+        android:id="@+id/type"
+        style="@style/BaseTextAppearance.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_double_padding"
+        app:layout_constraintEnd_toStartOf="@+id/route"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sourceName"
+        tools:text="Объект размещения отходов" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/BaseTextAppearance.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_double_padding"
+        app:layout_constraintEnd_toStartOf="@+id/route"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type"
+        tools:text="Академический район, Москва, Дер. зюзино, микрорайон №5, ул. Первомайская 42-24, 105203" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/route"
+        style="@style/AppTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/button_selector_secondary"
+        android:paddingHorizontal="@dimen/default_double_padding"
+        android:text="@string/object_info_route"
+        app:icon="@drawable/ic_route"
+        app:iconTint="?colorSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/type" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        style="@style/BaseTextAppearance.Label.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/object_info_date"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/BaseTextAppearance.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintStart_toStartOf="@+id/dateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/dateLabel"
+        tools:text="12.03.2020" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        style="@style/BaseTextAppearance.Label.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_double_padding"
+        android:text="@string/object_info_status"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintStart_toEndOf="@+id/dateLabel"
+        app:layout_constraintTop_toTopOf="@+id/dateLabel" />
+
+    <TextView
+        android:id="@+id/status"
+        style="@style/BaseTextAppearance.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintStart_toStartOf="@+id/statusLabel"
+        app:layout_constraintTop_toBottomOf="@+id/statusLabel"
+        tools:text="Запланировано" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/detailsBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="date,status"
+        app:barrierDirection="bottom" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/openDetails"
+        style="@style/AppTextButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/large_control_height"
+        android:layout_marginTop="@dimen/default_double_padding"
+        android:text="@string/object_info_open_inspection"
+        app:backgroundTint="@color/button_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsBarrier" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

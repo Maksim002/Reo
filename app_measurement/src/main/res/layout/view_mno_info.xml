@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorSurface"
+    android:paddingHorizontal="@dimen/default_side_padding"
+    android:paddingBottom="@dimen/default_double_padding">
+
+    <TextView
+        android:id="@+id/sourceName"
+        style="@style/BaseTextAppearance.ParagraphLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_double_padding"
+        app:layout_constraintEnd_toStartOf="@id/measurementCount"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="OOO Vasilek OOO Vasilek OOO Vasilek OOO VasilekOOO Vasilek OOO Vasilek OOO Vasilek OOO Vasilek" />
+
+    <TextView
+        android:id="@+id/measurementCount"
+        style="@style/BaseTextAppearance.ParagraphSmallBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sourceName"
+        tools:text="4444" />
+
+    <TextView
+        android:id="@+id/sourceType"
+        style="@style/BaseTextAppearance.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sourceName"
+        tools:text="School" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/BaseTextAppearance.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:textColor="?colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sourceType"
+        tools:text="Address" />
+
+    <TextView
+        android:id="@+id/containersTitle"
+        style="@style/BaseTextAppearance.ParagraphSmallBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/mno_info_containers_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/containers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containersTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/openDetails"
+        style="@style/AppTextButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/large_control_height"
+        android:layout_marginTop="@dimen/default_double_padding"
+        android:text="@string/mno_info_open_details"
+        app:backgroundTint="@color/button_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

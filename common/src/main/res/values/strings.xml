@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit_title">Выйти</string>
+    <string name="action_sync">Обновить</string>
+    <string name="action_reset">Сбросить</string>
+    <string name="season_summer">Летний</string>
+    <string name="season_winter">Зимний</string>
+    <string name="season_autumn">Осенний</string>
+    <string name="season_spring">Весенний</string>
+    <string name="volume_value">%s м3</string>
+    <string name="default_empty_title">Список пуст</string>
+    <string name="default_empty_message">На текущий момент нет доступных данных</string>
+    <string name="default_not_found_message">Ничего не найдено</string>
+    <string name="default_server_error_title">Ошибка загрузки</string>
+    <string name="error_page_retry">Повторить</string>
+    <string name="action_delete">Удалить</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_title_network_unavailable">Нет соединения</string>
+    <string name="error_message_server_error">Произошла ошибка\n%s</string>
+    <string name="error_message_network_unavailable">Пожалуйста, проверьте\nнастройки связи</string>
+    <string name="error_page_message">Произошла ошибка при загрузке данных,\nпопробуйте еще раз</string>
+    <string name="file_open_chooser">Ошибка загрузки</string>
+    <string name="sync_title_error">Ошибка синхронизации</string>
+    <string name="item_fallback_text">Данный элемент списка не поддерживается</string>
+    <string name="dialog_location_permission_title">Для доступа к местоположению необходимо предоставить разрешение</string>
+    <string name="dialog_permission_title">Для продолжения работы необходимо предоставить:</string>
+    <string name="dialog_media_permission_camera_rationale">- доступ к камере</string>
+    <string name="dialog_media_permission_location_rationale">- доступ к местоположению</string>
+    <string name="dialog_media_permission_storage_rationale">- доступ к хранилищу данных</string>
+    <string name="dialog_yes">Да</string>
+    <string name="dialog_choose">Выбрать</string>
+    <string name="dialog_no">Нет</string>
+    <string name="dialog_reject">Отмена</string>
+    <string name="dialog_approve">Разрешить</string>
+    <string name="swipe_down_behavior">ru.ktsstudio.common.utils.view.SwipeDownBehavior</string>
+    <string name="sync_body_error"> Не удалось загрузить актуальные данные, нажмите кнопку повторить или продолжите работать со старой версией.</string>
+    <string name="offline_dialog_title">Вы работаете в режиме офлайн</string>
+    <string name="offline_dialog_message">При появлении сети повторите синхронизацию</string>
+    <string name="exit_dialog_title">Вы действительно хотите выйти?</string>
+    <string name="exit_dialog_message">Проверьте, что все введенные данные были сохранены.</string>
+    <string name="exit_dialog_reject">Отмена</string>
+    <string name="exit_dialog_leave">Выйти</string>
+    <string name="location_is_not_available">Нет доступа к местоположению</string>
+    <string name="browser_is_not_available">Нет доступа к браузеру</string>
+    <string name="geo_data_request_dialog_title">Разрешите доступ к геоданным</string>
+
+    <string name="measurement_status_name_revision_requested">Запрошена ревизия</string>
+    <string name="measurement_status_name_moderation">Модерация</string>
+    <string name="measurement_status_name_published">Опубликован</string>
+    <string name="measurement_status_name_accepted">Акцептован</string>
+    <string name="measurement_status_name_deleted">Удалён (архив)</string>
+
+    <string name="filter_apply">Применить</string>
+    <string name="filter_title">Фильтры</string>
+
+    <string name="google_play_unavailable_title">Google play services не доступны</string>
+    <string name="google_play_unavailable_message">Google play services необходимы для работы с приложением</string>
+</resources>

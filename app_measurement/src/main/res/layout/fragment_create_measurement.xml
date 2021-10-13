@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        paddingBottomSystemWindowInsets="@{true}"
+        paddingLeftSystemWindowInsets="@{true}"
+        paddingRightSystemWindowInsets="@{true}">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/createMeasurementList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingTop="@dimen/default_triple_padding"
+            android:paddingBottom="@dimen/default_double_padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/bottomBlock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <LinearLayout
+            android:id="@+id/bottomBlock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?colorSurface"
+            android:clipToPadding="false"
+            android:elevation="4dp"
+            android:paddingHorizontal="@dimen/default_side_padding"
+            android:paddingVertical="@dimen/default_double_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backToStartMeasurement"
+                style="@style/AppTextButtonOutlined"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/large_control_height"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/default_double_padding"
+                android:layout_weight="1"
+                android:text="@string/measurement_back"
+                app:icon="@drawable/ic_arrow_left"
+                app:iconGravity="textStart"
+                app:iconTint="?colorPrimary" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/navigateToPreview"
+                style="@style/AppTextButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/large_control_height"
+                android:layout_weight="1"
+                android:text="@string/measurement_forward"
+                app:backgroundTint="@color/button_selector"
+                app:icon="@drawable/ic_arrow_right"
+                app:iconGravity="textEnd"
+                app:iconTint="?colorSurface" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
